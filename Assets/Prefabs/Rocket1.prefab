@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 49628282051002547}
   - component: {fileID: 2963125852942796978}
   - component: {fileID: 1430384533001524983}
-  - component: {fileID: 3247631030942679359}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Untagged
@@ -79,20 +78,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!136 &3247631030942679359
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 400471392668405685}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &6406998156306848804
 GameObject:
   m_ObjectHideFlags: 0
@@ -102,10 +87,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6442661281638565057}
+  - component: {fileID: 786381223}
   - component: {fileID: 2726376059402679462}
   m_Layer: 0
   m_Name: Rocket1
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -125,6 +111,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &786381223
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6406998156306848804}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &2726376059402679462
 MonoBehaviour:
   m_ObjectHideFlags: 0
