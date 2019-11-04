@@ -10,18 +10,13 @@ namespace Orbitality.Main
 
         [SerializeField] private GameObject bulletPrefab;
         [SerializeField] private Transform bulletSpawnPoint;
-
-        private Vector2 positionOnScreen;
-        private PlanetManager planetManager;
+        [SerializeField] private PlanetManager planetManager;
         
         public override void Init()
         {
             base.Init();
-
-            Vector3 worldToScreenPos = Camera.main.WorldToScreenPoint(myTransform.position);
-            positionOnScreen = new Vector2(worldToScreenPos.x, worldToScreenPos.y);
-
-            planetManager = GetComponent<PlanetManager>();
+            
+            planetManager.SetId(id);
         }
 
         private void Update()
@@ -37,6 +32,12 @@ namespace Orbitality.Main
             myTransform.rotation = UpdateRotation();
         }
 
+        private Vector2 GetPositionOnScreen()
+        {
+            Vector3 worldToScreenPos = Camera.main.WorldToScreenPoint(myTransform.position);
+            return new Vector2(worldToScreenPos.x, worldToScreenPos.y);
+        }
+
         private void InstantiateBullet()
         {
             GameObject newRacket = Instantiate(bulletPrefab, bulletSpawnPoint.position, bulletSpawnPoint.rotation);
@@ -47,6 +48,7 @@ namespace Orbitality.Main
         private Quaternion UpdateRotation()
         {
             Vector2 mousePos = Input.mousePosition;
+            Vector3 positionOnScreen = GetPositionOnScreen();
             Vector2 relativeMousePos = new Vector2(mousePos.x - positionOnScreen.x, mousePos.y - positionOnScreen.y);
             float angle = Mathf.Atan2(relativeMousePos.y, relativeMousePos.x) * Mathf.Rad2Deg * -1;
             Quaternion rot = Quaternion.AngleAxis(angle, Vector3.up);
