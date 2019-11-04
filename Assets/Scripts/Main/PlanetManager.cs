@@ -21,8 +21,7 @@ namespace Orbitality.Main
         {
             base.Init();
 
-            var gameController = FindObjectOfType<GameController>();
-            gameController.AddPlanet(this);
+            GameController.Instance.AddPlanet(this);
 
             startLife = life;
         }

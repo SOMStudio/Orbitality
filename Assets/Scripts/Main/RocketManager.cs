@@ -19,7 +19,8 @@ namespace Orbitality.Main
         {
             base.Init();
             
-            gameController = FindObjectOfType<GameController>();
+            gameController = GameController.Instance;
+            
             vectorMove = myTransform.forward;
             
             Invoke(nameof(DestroyObject), 60);

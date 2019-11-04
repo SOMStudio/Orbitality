@@ -8,15 +8,19 @@ namespace Orbitality.Main
     {
         private List<IGravityDependent> planetList = new List<IGravityDependent>();
     
-        void Start()
+        void Awake()
         {
-        
+            if (!Instance)
+            {
+                Instance = this;
+            }
+            else
+            {
+                Destroy(this);
+            }
         }
-    
-        void Update()
-        {
-        
-        }
+
+        public static GameController Instance { get; private set; }
 
         public void AddPlanet(IGravityDependent planet)
         {
