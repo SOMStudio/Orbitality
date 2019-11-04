@@ -24,7 +24,6 @@ public class ExtendedCustomMonoBehaviour : MonoBehaviour
 	/// Init main instance (myTransform, myGO, myBody), def. in Start.
 	/// </summary>
 	public virtual void Init() {
-		// cache refs to our transform and gameObject
 		if (!myTransform) {
 			myTransform = transform;
 		}
@@ -35,11 +34,13 @@ public class ExtendedCustomMonoBehaviour : MonoBehaviour
 			myBody = GetComponent<Rigidbody> ();
 		}
 
+		SetId(myGO.GetHashCode());
+		
 		didInit = true;
 	}
 
-	public virtual void SetID( int anID )
+	public virtual void SetId( int anId )
 	{
-		id = anID;
+		id = anId;
 	}
 }

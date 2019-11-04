@@ -5,13 +5,14 @@ using UnityEngine;
 
 namespace Orbitality.Main
 {
-    public class RocketManager : ExtendedCustomMonoBehaviour
+    public class RocketManager : ExtendedCustomMonoBehaviour, IDamageable, IIgnoreable
     {
-        [SerializeField]
-        private float speed = 10.0f;
+        [SerializeField] private float speed = 10.0f;
+        [SerializeField] private float damage = 1.0f;
 
+        private List<int> ignorePlanetList = new List<int>();
+        
         private Vector3 vectorMove;
-
         private GameController gameController;
         
         public override void Init()
@@ -27,7 +28,7 @@ namespace Orbitality.Main
         void Update()
         {
             myTransform.position = UpdatePosition();
-            myTransform.rotation = UpdateRotating();
+            myTransform.rotation = UpdateRotation();
         }
 
         private Vector3 UpdatePosition()
@@ -47,7 +48,7 @@ namespace Orbitality.Main
             return  myTransform.position + speedVector * Time.deltaTime;
         }
 
-        private Quaternion UpdateRotating()
+        private Quaternion UpdateRotation()
         {
             return  Quaternion.LookRotation(vectorMove, Vector3.up);
         }
@@ -63,6 +64,32 @@ namespace Orbitality.Main
         private void DestroyObject()
         {
             Destroy(myGO);
+        }
+
+
+        public void SetDamage(float value)
+        {
+            damage = value;
+        }
+
+        public float GetDamage()
+        {
+            return damage;
+        }
+
+        public void AddIgnore(int value)
+        {
+            ignorePlanetList.Add(value);
+        }
+
+        public void RemoveIgnore(int value)
+        {
+            ignorePlanetList.Remove(value);
+        }
+
+        public bool InIgnore(int value)
+        {
+            return ignorePlanetList.Contains(value);
         }
     }
 }
