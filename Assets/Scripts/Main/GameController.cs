@@ -16,7 +16,7 @@ namespace Orbitality.Main
             }
             else
             {
-                Destroy(this);
+                Destroy(this.gameObject);
             }
         }
 
