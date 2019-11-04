@@ -10,6 +10,8 @@ namespace Orbitality.Main
 
         [SerializeField] private GameObject bulletPrefab;
         [SerializeField] private Transform bulletSpawnPoint;
+        
+        
         [SerializeField] private PlanetManager planetManager;
         
         public override void Init()
@@ -40,9 +42,9 @@ namespace Orbitality.Main
 
         private void InstantiateBullet()
         {
-            GameObject newRacket = Instantiate(bulletPrefab, bulletSpawnPoint.position, bulletSpawnPoint.rotation);
-            IIgnoreable racketIgnoreList = newRacket.GetComponent<IIgnoreable>();
-            racketIgnoreList.AddIgnore(id);
+            GameObject newBullet = Instantiate(bulletPrefab, bulletSpawnPoint.position, bulletSpawnPoint.rotation);
+            IIgnoreable bulletIgnoreList = newBullet.GetComponent<IIgnoreable>();
+            bulletIgnoreList.AddIgnore(id);
         }
 
         private Quaternion UpdateRotation()
