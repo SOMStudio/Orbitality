@@ -18,11 +18,7 @@ public class ExtendedCustomMonoBehaviour : MonoBehaviour
 	void Start() {
 		Init();
 	}
-
-	// main logic
-	/// <summary>
-	/// Init main instance (myTransform, myGO, myBody), def. in Start.
-	/// </summary>
+	
 	public virtual void Init() {
 		if (!myTransform) {
 			myTransform = transform;
