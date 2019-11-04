@@ -9,6 +9,7 @@ namespace Orbitality.Main
     {
         [SerializeField] private float speed = 10.0f;
         [SerializeField] private float damage = 1.0f;
+        [SerializeField] private float destroyTime = 10.0f;
 
         private List<int> ignorePlanetList = new List<int>();
         
@@ -22,8 +23,8 @@ namespace Orbitality.Main
             gameController = GameController.Instance;
             
             vectorMove = myTransform.forward;
-            
-            Invoke(nameof(DestroyObject), 60);
+
+            DestroyAfterTime(destroyTime);
         }
 
         void Update()
@@ -67,6 +68,15 @@ namespace Orbitality.Main
             Destroy(myGO);
         }
 
+        private void DestroyAfterTime(float value)
+        {
+            Invoke(nameof(DestroyObject), destroyTime);
+        }
+
+        private void FuelOff()
+        {
+            speed = 5;
+        }
 
         public void SetDamage(float value)
         {
