@@ -10,12 +10,30 @@ namespace Orbitality.Main
         [SerializeField] private float speed = 10.0f;
         [SerializeField] private float damage = 1.0f;
         [SerializeField] private float destroyTime = 10.0f;
-
+        
         private List<int> ignorePlanetList = new List<int>();
         
         private Vector3 vectorMove;
         private GameController gameController;
+
+        public float Speed
+        {
+            get => speed;
+            set => speed = value;
+        }
         
+        public float Damage
+        {
+            get => damage;
+            set => damage = value;
+        }
+
+        public float DestroyTime
+        {
+            get => destroyTime;
+            set => destroyTime = value;
+        }
+
         public override void Init()
         {
             base.Init();
@@ -23,8 +41,6 @@ namespace Orbitality.Main
             gameController = GameController.Instance;
             
             vectorMove = myTransform.forward;
-
-            DestroyAfterTime(destroyTime);
         }
 
         void Update()
@@ -32,10 +48,10 @@ namespace Orbitality.Main
             myTransform.position = UpdatePosition();
             myTransform.rotation = UpdateRotation();
         }
-
+        
         private Vector3 UpdatePosition()
         {
-            Vector3 speedVector = vectorMove * speed;
+            Vector3 speedVector = vectorMove * Speed;
             Vector3 dependVector = gameController.GetDependencyVector(myTransform);
 
             if (dependVector != Vector3.zero)
@@ -44,7 +60,7 @@ namespace Orbitality.Main
                 speedVector = Vector3.Lerp(speedVector, speedVectorNew, Time.deltaTime);
                 
                 vectorMove = speedVector.normalized;
-                speedVector = vectorMove * speed;
+                speedVector = vectorMove * Speed;
             }
             
             return  myTransform.position + speedVector * Time.deltaTime;
@@ -68,24 +84,24 @@ namespace Orbitality.Main
             Destroy(myGO);
         }
 
-        private void DestroyAfterTime(float value)
+        public void InitDestroyAfterTime()
         {
-            Invoke(nameof(DestroyObject), destroyTime);
+            Invoke(nameof(DestroyObject), DestroyTime);
         }
 
         private void FuelOff()
         {
-            speed = 5;
+            Speed = 5;
         }
 
         public void SetDamage(float value)
         {
-            damage = value;
+            Damage = value;
         }
 
         public float GetDamage()
         {
-            return damage;
+            return Damage;
         }
 
         public void AddIgnore(int value)

@@ -30,8 +30,6 @@ public class ExtendedCustomMonoBehaviour : MonoBehaviour
 			myBody = GetComponent<Rigidbody> ();
 		}
 
-		SetId(myGO.GetHashCode());
-		
 		didInit = true;
 	}
 

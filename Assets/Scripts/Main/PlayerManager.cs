@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using Orbitality.Weapon;
+using Orbitality.Weapons;
 using UnityEngine;
 
 namespace Orbitality.Main
@@ -8,16 +10,21 @@ namespace Orbitality.Main
     public class PlayerManager : ExtendedCustomMonoBehaviour
     {
 
-        [SerializeField] private GameObject bulletPrefab;
-        [SerializeField] private Transform bulletSpawnPoint;
-        
-        
+        [SerializeField] private WeaponDataTemplate weaponDataTemplate;
+        [SerializeField] private GameObject bulletSpawnPoint;
+
+        [SerializeField] private WeaponManager weaponManager;
         [SerializeField] private PlanetManager planetManager;
         
         public override void Init()
         {
             base.Init();
             
+            SetId(myGO.GetHashCode());
+            
+            weaponManager.InitData(weaponDataTemplate.WeaponData, bulletSpawnPoint);
+            
+            weaponManager.SetId(id);
             planetManager.SetId(id);
         }
 
@@ -25,7 +32,7 @@ namespace Orbitality.Main
         {
             if (Input.GetMouseButtonDown(0))
             {
-                InstantiateBullet();
+                weaponManager.Shot();
             }
         }
 
@@ -38,13 +45,6 @@ namespace Orbitality.Main
         {
             Vector3 worldToScreenPos = Camera.main.WorldToScreenPoint(myTransform.position);
             return new Vector2(worldToScreenPos.x, worldToScreenPos.y);
-        }
-
-        private void InstantiateBullet()
-        {
-            GameObject newBullet = Instantiate(bulletPrefab, bulletSpawnPoint.position, bulletSpawnPoint.rotation);
-            IIgnoreable bulletIgnoreList = newBullet.GetComponent<IIgnoreable>();
-            bulletIgnoreList.AddIgnore(id);
         }
 
         private Quaternion UpdateRotation()

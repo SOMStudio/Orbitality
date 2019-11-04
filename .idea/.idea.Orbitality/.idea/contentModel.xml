@@ -13,12 +13,20 @@
               <e p="IDamageable.cs" t="Include" />
               <e p="IGravityDependent.cs" t="Include" />
               <e p="IIgnoreable.cs" t="Include" />
+              <e p="IWeapon.cs" t="Include" />
             </e>
             <e p="PlanetManager.cs" t="Include" />
             <e p="PlayerManager.cs" t="Include" />
             <e p="RocketManager.cs" t="Include" />
             <e p="UI" t="Include">
               <e p="UiPlanet.cs" t="Include" />
+            </e>
+            <e p="WeaponManager.cs" t="Include" />
+            <e p="Weapons" t="Include">
+              <e p="DewScripts" t="Include">
+                <e p="WeaponData.cs" t="Include" />
+                <e p="WeaponDataTemplate.cs" t="Include" />
+              </e>
             </e>
           </e>
           <e p="Untils" t="Include">
