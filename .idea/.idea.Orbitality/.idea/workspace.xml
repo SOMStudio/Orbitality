@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1535d9da-df6f-45b2-b34a-934debf97b42" name="Default Changelist" comment="" />
+    <list default="true" id="1535d9da-df6f-45b2-b34a-934debf97b42" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Orbitality/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Orbitality/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels/Level1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levels/Level1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels/Level2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levels/Level2.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,7 +18,23 @@
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Weapons/Data.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://E:/Unity/Hands-on-Game-Development-with-Unity-2018.1-development/Assets/GameFramework/SaveSystem/Interfaces/IFileReader.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://E:/Unity/Scripts/Assets/Scripts/COMMON/WEAPONS/ProjectileController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Untils/AutoSpinObject.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://E:/Unity/Scripts/Assets/Scripts/COMMON/INPUT/Mouse_Input.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Untils/ExtendedCustomMonoBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://E:/Unity/Scripts/Assets/Scripts/COMMON/WEAPONS/Standard_SlotWeaponController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://E:/Unity/Scripts/Assets/Scripts/BASE/BaseWeaponScript.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://E:/Unity/Scripts/Assets/Scripts/BASE/BaseInputController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://E:/Unity/Scripts/Assets/Scripts/BASE/BaseUserManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://E:/Unity/Scripts/Assets/Scripts/BASE/BasePlayerManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://E:/Unity/Hands-on-Game-Development-with-Unity-2018.1-development/Assets/GameFramework/Input/InputImplementation/InputBindings.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://E:/Unity/Hands-on-Game-Development-with-Unity-2018.1-development/Assets/GameFramework/Input/InputImplementation/InputManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://E:/Unity/Hands-on-Game-Development-with-Unity-2018.1-development/Assets/GameFramework/Input/InputImplementation/RadialMouseInputHandler.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://E:/Unity/Hands-on-Game-Development-with-Unity-2018.1-development/Assets/RogueSmash/Weapons/Scripts/Pistol.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://E:/Unity/Hands-on-Game-Development-with-Unity-2018.1-development/Assets/GameFramework/Input/Samples/SampleBindings.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://E:/Unity/Hands-on-Game-Development-with-Unity-2018.1-development/Assets/GameFramework/Coroutines/CoroutineHelper.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://E:/Unity/Hands-on-Game-Development-with-Unity-2018.1-development/Assets/GameFramework/Physics/Interfaces/ICollisionEnterHandler.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://E:/Unity/Hands-on-Game-Development-with-Unity-2018.1-development/Assets/GameFramework/Input/Interfaces/IMouseInputHandler.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://E:/Unity/Scripts/Assets/Scripts/BASE/BaseWeaponController.cs" root0="SKIP_HIGHLIGHTING" />
@@ -23,32 +44,17 @@
     <setting file="file://E:/Unity/Hands-on-Game-Development-with-Unity-2018.1-development/Assets/RogueSmash/Prototype/Scripts/CharacterControls.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://E:/Unity/Scripts/Assets/Scripts/BASE/BASE PLAYER CONTROLLERS/BaseTopDown.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://E:/Unity/Scripts/Assets/Scripts/BASE/BASE PLAYER CONTROLLERS/BaseArmedEnemy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://E:/Unity/Scripts/Assets/Scripts/COMMON/WEAPONS/ProjectileController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Untils/AutoSpinObject.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://E:/Unity/Scripts/Assets/Scripts/COMMON/INPUT/Mouse_Input.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Untils/ExtendedCustomMonoBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://E:/Unity/Scripts/Assets/Scripts/GAMES/SkyRoads/PlayerManager_SkyRoads.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://E:/Unity/Scripts/Assets/Scripts/GAMES/SkyRoads/UserManager_SkyRoads.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://E:/Unity/Scripts/Assets/Scripts/COMMON/WEAPONS/Standard_SlotWeaponController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://E:/Unity/Scripts/Assets/Scripts/COMMON/INPUT/Keyboard_Input.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Prefabs/Player.prefab" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://E:/Unity/Scripts/Assets/Scripts/GAMES/SkyRoads/LevelManager_SkyRoads.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://E:/Unity/Scripts/Assets/Scripts/BASE/BaseWeaponScript.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://E:/Unity/Hands-on-Game-Development-with-Unity-2018.1-development/Assets/GameFramework/SaveSystem/Scripts/SaveSystem.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://E:/Unity/Scripts/Assets/Scripts/GAMES/SkyRoads/GameController_SkyRoads.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://E:/Unity/Hands-on-Game-Development-with-Unity-2018.1-development/Assets/GameFramework/SaveSystem/Samples/SaveSystemSample.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://E:/Unity/Scripts/Assets/Scripts/BASE/BaseInputController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://E:/Unity/Scripts/Assets/Scripts/BASE/BaseUserManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://E:/Unity/Scripts/Assets/Scripts/BASE/BasePlayerManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://E:/Unity/Hands-on-Game-Development-with-Unity-2018.1-development/Assets/GameFramework/Input/InputImplementation/InputBindings.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://E:/Unity/Hands-on-Game-Development-with-Unity-2018.1-development/Assets/GameFramework/Input/InputImplementation/InputManager.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://E:/Unity/Hands-on-Game-Development-with-Unity-2018.1-development/Assets/GameFramework/Input/InputImplementation/RadialMouseInputHandler.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://E:/Unity/Hands-on-Game-Development-with-Unity-2018.1-development/Assets/RogueSmash/Weapons/Scripts/Pistol.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Untils/NotRotate.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://E:/Unity/Hands-on-Game-Development-with-Unity-2018.1-development/Assets/GameFramework/Input/Samples/SampleBindings.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Untils/LookAtCamera.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://E:/Unity/Hands-on-Game-Development-with-Unity-2018.1-development/Assets/GameFramework/SaveSystem/Interfaces/IFileWriter.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://E:/Unity/Hands-on-Game-Development-with-Unity-2018.1-development/Assets/GameFramework/Coroutines/CoroutineHelper.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -132,7 +138,7 @@
       <workItem from="1572680188006" duration="22047000" />
       <workItem from="1572774354244" duration="10971000" />
       <workItem from="1572848301083" duration="13119000" />
-      <workItem from="1572947002860" duration="532000" />
+      <workItem from="1572947002860" duration="1214000" />
     </task>
     <servers />
   </component>
