@@ -7,33 +7,31 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
-          <e p="Main" t="Include">
-            <e p="GameController.cs" t="Include" />
-            <e p="Interfaces" t="Include">
-              <e p="IDamageable.cs" t="Include" />
-              <e p="IGravityDependent.cs" t="Include" />
-              <e p="IIgnoreable.cs" t="Include" />
-              <e p="IWeapon.cs" t="Include" />
-            </e>
-            <e p="PlanetManager.cs" t="Include" />
-            <e p="PlayerManager.cs" t="Include" />
-            <e p="RocketManager.cs" t="Include" />
-            <e p="UI" t="Include">
-              <e p="UiPlanet.cs" t="Include" />
-            </e>
-            <e p="WeaponManager.cs" t="Include" />
-            <e p="Weapons" t="Include">
-              <e p="DewScripts" t="Include">
-                <e p="WeaponData.cs" t="Include" />
-                <e p="WeaponDataTemplate.cs" t="Include" />
-              </e>
-            </e>
+          <e p="GameController.cs" t="Include" />
+          <e p="Interfaces" t="Include">
+            <e p="IDamageable.cs" t="Include" />
+            <e p="IGravityDependent.cs" t="Include" />
+            <e p="IIgnoreable.cs" t="Include" />
+            <e p="IWeapon.cs" t="Include" />
+          </e>
+          <e p="PlanetManager.cs" t="Include" />
+          <e p="PlayerManager.cs" t="Include" />
+          <e p="RocketManager.cs" t="Include" />
+          <e p="UI" t="Include">
+            <e p="UiPlanet.cs" t="Include" />
           </e>
           <e p="Untils" t="Include">
             <e p="AutoSpinObject.cs" t="Include" />
             <e p="ExtendedCustomMonoBehaviour.cs" t="Include" />
             <e p="LookAtCamera.cs" t="Include" />
             <e p="NotRotate.cs" t="Include" />
+          </e>
+          <e p="WeaponManager.cs" t="Include" />
+          <e p="Weapons" t="Include">
+            <e p="DewScripts" t="Include">
+              <e p="WeaponData.cs" t="Include" />
+              <e p="WeaponDataTemplate.cs" t="Include" />
+            </e>
           </e>
         </e>
       </e>
