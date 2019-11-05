@@ -32,7 +32,7 @@ namespace Orbitality.Main
         {
             if (Input.GetMouseButtonDown(0))
             {
-                weaponManager.Shot();
+                Shot(weaponManager);
             }
         }
 
@@ -55,6 +55,18 @@ namespace Orbitality.Main
             float angle = Mathf.Atan2(relativeMousePos.y, relativeMousePos.x) * Mathf.Rad2Deg * -1;
             Quaternion rot = Quaternion.AngleAxis(angle, Vector3.up);
             return rot;
+        }
+
+        private void Shot(IWeapon value)
+        {
+            if (weaponManager.Shot())
+            {
+                SoundManager.Instance?.PlaySoundByIndex(2, myTransform.position);
+            }
+            else
+            {
+                SoundManager.Instance?.PlaySoundByIndex(5, myTransform.position);
+            }
         }
     }
 }

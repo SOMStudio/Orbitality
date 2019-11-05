@@ -82,6 +82,8 @@ namespace Orbitality.Main
         private void DestroyObject()
         {
             Destroy(myGO);
+            
+            SoundManager.Instance?.PlaySoundByIndex(6, myTransform.position);
         }
 
         public void InitDestroyAfterTime()

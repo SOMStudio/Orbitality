@@ -19,21 +19,21 @@ namespace Orbitality.Menu
         {
             base.SaveOptionsPrefs();
             
-            SoundManager.Instance.UpdateVolume();
+            SoundManager.Instance?.UpdateVolume();
         }
 
         protected override void ChangeWindowEvent(int number)
         {
             base.ChangeWindowEvent(number);
             
-            SoundManager.Instance.PlaySoundByIndex(0, Vector3.zero);
+            SoundManager.Instance?.PlaySoundByIndex(0, Vector3.zero);
         }
 
         protected override void ChangeConsoleWEvent(int number)
         {
             base.ChangeConsoleWEvent(number);
             
-            SoundManager.Instance.PlaySoundByIndex(0, Vector3.zero);
+            SoundManager.Instance?.PlaySoundByIndex(0, Vector3.zero);
         }
 
         public void RunLevel(int value)
@@ -53,7 +53,7 @@ namespace Orbitality.Menu
         {
             //gameController.SaveDataLevel ();
             
-            SoundManager.Instance.PlaySoundByIndex(1, Vector3.zero);
+            SoundManager.Instance?.PlaySoundByIndex(1, Vector3.zero);
 		    
             base.ExitGame ();
         }
@@ -72,14 +72,14 @@ namespace Orbitality.Menu
         {
             base.ConsoleWinYesNo_ButtonNo();
             
-            SoundManager.Instance.PlaySoundByIndex(1, Vector3.zero);
+            SoundManager.Instance?.PlaySoundByIndex(1, Vector3.zero);
         }
 
         public override void ConsoleWinYesNo_ButtonYes()
         {
             base.ConsoleWinYesNo_ButtonYes();
             
-            SoundManager.Instance.PlaySoundByIndex(1, Vector3.zero);
+            SoundManager.Instance?.PlaySoundByIndex(1, Vector3.zero);
         }
     }
 }
