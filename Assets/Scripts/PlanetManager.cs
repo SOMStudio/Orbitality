@@ -20,9 +20,9 @@ namespace Orbitality.Main
         public override void Init()
         {
             base.Init();
-
-            GameController.Instance.AddPlanet(this);
-
+            
+            GameController.Instance?.AddPlanet(this);
+            
             startLife = life;
         }
 
@@ -46,7 +46,7 @@ namespace Orbitality.Main
             Vector3 vectorToObject = transform.position - positionV3.position;
             float distanceToObject = vectorToObject.magnitude;
             Vector3 result = Vector3.zero;
-
+            
             if (distanceToObject <= distanceDepend)
             {
                 float inverseDependency = 1 - (distanceToObject / distanceDepend);
