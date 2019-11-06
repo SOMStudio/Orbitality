@@ -7,11 +7,14 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
+          <e p="EnemyManager.cs" t="Include" />
           <e p="GameController.cs" t="Include" />
           <e p="Interfaces" t="Include">
             <e p="IDamageable.cs" t="Include" />
+            <e p="IGravityController.cs" t="Include" />
             <e p="IGravityDependent.cs" t="Include" />
             <e p="IIgnoreable.cs" t="Include" />
+            <e p="IPlanet.cs" t="Include" />
             <e p="IWeapon.cs" t="Include" />
           </e>
           <e p="PlanetManager.cs" t="Include" />
@@ -23,7 +26,9 @@
           <e p="UI" t="Include">
             <e p="BaseMenuManager.cs" t="Include" />
             <e p="ManuManager.cs" t="Include" />
+            <e p="UiEnemyHUD.cs" t="Include" />
             <e p="UiPlanet.cs" t="Include" />
+            <e p="UiPlayerHUD.cs" t="Include" />
           </e>
           <e p="Untils" t="Include">
             <e p="AnimationOpenClose.cs" t="Include" />

@@ -83,9 +83,9 @@ MonoBehaviour:
   m_HandleRect: {fileID: 298779089628543225}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 1
+  m_MaxValue: 100
   m_WholeNumbers: 0
-  m_Value: 1
+  m_Value: 100
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -682,9 +682,9 @@ MonoBehaviour:
   m_HandleRect: {fileID: 298779090455982902}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 1
+  m_MaxValue: 100
   m_WholeNumbers: 0
-  m_Value: 1
+  m_Value: 100
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -1675,6 +1675,7 @@ GameObject:
   - component: {fileID: 298779089658669711}
   - component: {fileID: 298779089658669708}
   - component: {fileID: 298779089658669709}
+  - component: {fileID: 768941902850450950}
   m_Layer: 5
   m_Name: PanelLife
   m_TagString: Untagged
@@ -1764,6 +1765,19 @@ MonoBehaviour:
   m_ChildControlHeight: 1
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
+--- !u!114 &768941902850450950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 298779089658669707}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d1a7ec1994fc6c4aa3a9548d122ef84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sliderLife: {fileID: 298779088993629412}
 --- !u!1 &298779089679608427
 GameObject:
   m_ObjectHideFlags: 0
@@ -1849,6 +1863,7 @@ GameObject:
   - component: {fileID: 298779089726041414}
   - component: {fileID: 298779089726041415}
   - component: {fileID: 298779089726041412}
+  - component: {fileID: 5620409476697728271}
   m_Layer: 5
   m_Name: PanelPlayer
   m_TagString: Untagged
@@ -1938,6 +1953,21 @@ MonoBehaviour:
   m_ChildControlHeight: 1
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
+--- !u!114 &5620409476697728271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 298779089726041410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b79398745650718469f1bc71ab152739, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sliderLife: {fileID: 298779088604188621}
+  ammoText: {fileID: 298779089888522320}
+  weaponState: {fileID: 298779090629399636}
 --- !u!1 &298779089888522334
 GameObject:
   m_ObjectHideFlags: 0
@@ -2748,9 +2778,9 @@ MonoBehaviour:
   m_HandleRect: {fileID: 7091646944822118347}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 1
+  m_MaxValue: 100
   m_WholeNumbers: 0
-  m_Value: 1
+  m_Value: 100
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -3486,6 +3516,7 @@ GameObject:
   - component: {fileID: 6276599262307349145}
   - component: {fileID: 5937046384807377601}
   - component: {fileID: 3297072998487386999}
+  - component: {fileID: 3801443326613038817}
   m_Layer: 5
   m_Name: PanelLife (1)
   m_TagString: Untagged
@@ -3575,6 +3606,19 @@ MonoBehaviour:
   m_ChildControlHeight: 1
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
+--- !u!114 &3801443326613038817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5680910190297752849}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d1a7ec1994fc6c4aa3a9548d122ef84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sliderLife: {fileID: 7286997564064959911}
 --- !u!1 &6433613961616132053
 GameObject:
   m_ObjectHideFlags: 0
@@ -3939,9 +3983,9 @@ MonoBehaviour:
   m_HandleRect: {fileID: 4180266439115681139}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 1
+  m_MaxValue: 100
   m_WholeNumbers: 0
-  m_Value: 1
+  m_Value: 100
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -4030,6 +4074,7 @@ GameObject:
   - component: {fileID: 5115373696780893345}
   - component: {fileID: 860368939187796093}
   - component: {fileID: 5290453014410690052}
+  - component: {fileID: 299915074504130746}
   m_Layer: 5
   m_Name: PanelLife (2)
   m_TagString: Untagged
@@ -4119,3 +4164,16 @@ MonoBehaviour:
   m_ChildControlHeight: 1
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
+--- !u!114 &299915074504130746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8937677665043951688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d1a7ec1994fc6c4aa3a9548d122ef84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sliderLife: {fileID: 4061747228649085089}

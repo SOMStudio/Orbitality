@@ -14,13 +14,33 @@ namespace Orbitality.Weapon
         private float lastFire = 0;
         private Transform spawnPoint;
 
+        public event Action<float, float> ChangeAmmoEvent;
+        public event Action<string> ChangeStateEvent;
+        
         public void InitData(WeaponData weaponDataValue, GameObject spawnPointValue)
         {
-            weaponData = weaponDataValue;
-            currentAmmo = weaponDataValue.MaxAmmo;
-            spawnPoint = spawnPointValue.transform;
+            WeaponData = weaponDataValue;
+            SpawnPoint = spawnPointValue.transform;
+            
+            ChangeStateEvent?.Invoke("Active");
+        }
+
+        public WeaponData WeaponData
+        {
+            get => weaponData;
+            set
+            {
+                weaponData = value;
+                currentAmmo = weaponData.MaxAmmo;
+            }
         }
         
+        public Transform SpawnPoint
+        {
+            get => spawnPoint;
+            set => spawnPoint = value;
+        }
+
         public bool Shot()
         {
             if (lastFire + weaponData.MinFireInterval > Time.time)
@@ -38,6 +58,8 @@ namespace Orbitality.Weapon
                 currentAmmo--;
                 lastFire = Time.time;
                 SpawnBullet();
+                
+                ChangeAmmoEvent?.Invoke(currentAmmo, weaponData.MaxAmmo);
                 
                 return true;
             } 
@@ -73,6 +95,8 @@ namespace Orbitality.Weapon
 
         private IEnumerator ReloadTimer()
         {
+            ChangeStateEvent?.Invoke("Reload");
+            
             float timer = 0;
             while (timer <= weaponData.ReloadTime)
             {
@@ -81,6 +105,10 @@ namespace Orbitality.Weapon
             }
 
             currentAmmo = weaponData.MaxAmmo;
+            
+            ChangeAmmoEvent?.Invoke(currentAmmo, weaponData.MaxAmmo);
+            ChangeStateEvent?.Invoke("Active");
+            
             isReloading = false;
         } 
     }

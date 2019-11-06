@@ -14,7 +14,7 @@ namespace Orbitality.Main
         private List<int> ignorePlanetList = new List<int>();
         
         private Vector3 vectorMove;
-        private GameController gameController;
+        private IGravityController gravityController;
 
         public float Speed
         {
@@ -38,7 +38,7 @@ namespace Orbitality.Main
         {
             base.Init();
             
-            gameController = GameController.Instance;
+            gravityController = GameController.Instance;
             
             vectorMove = myTransform.forward;
         }
@@ -52,7 +52,7 @@ namespace Orbitality.Main
         private Vector3 UpdatePosition()
         {
             Vector3 speedVector = vectorMove * Speed;
-            Vector3 dependVector = gameController.GetDependencyVector(myTransform);
+            Vector3 dependVector = gravityController.GetDependencyVector(myTransform);
 
             if (dependVector != Vector3.zero)
             {

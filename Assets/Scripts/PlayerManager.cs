@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using Orbitality.Weapon;
 using Orbitality.Weapons;
 using UnityEngine;
+using UnityEngine.Playables;
 
 namespace Orbitality.Main
 {
@@ -15,7 +16,16 @@ namespace Orbitality.Main
 
         [SerializeField] private WeaponManager weaponManager;
         [SerializeField] private PlanetManager planetManager;
-        
+
+        public IWeapon Weapon
+        {
+            get => weaponManager;
+        }
+        public IPlanet Planet
+        {
+            get => planetManager;
+        }
+
         public override void Init()
         {
             base.Init();

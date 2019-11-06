@@ -6,7 +6,7 @@ using UnityEngine.Serialization;
 
 namespace Orbitality.Main
 {
-    public class PlanetManager : ExtendedCustomMonoBehaviour, IGravityDependent
+    public class PlanetManager : ExtendedCustomMonoBehaviour, IPlanet, IGravityDependent
     {
         [SerializeField] private string namePlanet = "Planet";
         [SerializeField] private float mass = 10.0f;
@@ -17,9 +17,37 @@ namespace Orbitality.Main
 
         [SerializeField] private UiPlanet uiManager;
 
+        public event Action<float> ChangeLifeEvent;
+
+        public string NamePlanet
+        {
+            get => namePlanet;
+            set => namePlanet = value;
+        }
+
+        public float Mass
+        {
+            get => mass;
+            set => mass = value;
+        }
+
+        public float DistanceDepend
+        {
+            get => distanceDepend;
+            set => distanceDepend = value;
+        }
+
+        public float Life
+        {
+            get => life;
+            set => life = value;
+        }
+
         public override void Init()
         {
             base.Init();
+
+            ChangeLifeEvent += uiManager.SetLife;
             
             GameController.Instance?.AddPlanet(this);
             
@@ -35,8 +63,8 @@ namespace Orbitality.Main
                 if (ignorable != null && !ignorable.InIgnore(id))
                 {
                     life -= damageable.GetDamage();
-                    
-                    uiManager.SetLife(life * 100 / startLife);
+
+                    ChangeLifeEvent?.Invoke(life * 100 / startLife);
                 }
             }
         }
