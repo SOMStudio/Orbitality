@@ -51,6 +51,8 @@ namespace Orbitality.Main
                 enemy[i].Planet.ChangeLifeEvent += uiEnemyHUD[i].UpdateLife;
                 enemy[i].Planet.ChangeLifeEvent += CheckLifeEnemy;
             }
+            
+            player.Weapon.WeaponData = weapon[Random.Range(0, weapon.Length)].WeaponData;
         }
 
         public override void PlayerDestroyed()

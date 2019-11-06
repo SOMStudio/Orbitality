@@ -2,16 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1535d9da-df6f-45b2-b34a-934debf97b42" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Orbitality/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Orbitality/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Orbitality/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Orbitality/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Rocket1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Rocket1.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels/Level1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levels/Level1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels/Level2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levels/Level2.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlanetManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlanetManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/BaseMenuManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interfaces/BaseMenuManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/BaseMenuManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interfaces/BaseMenuManager.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Weapons/Data/Rocket1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Weapons/Data/Rocket1.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Weapons/Data/Rocket1Short.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Weapons/Data/Rocket1Short.asset" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -121,10 +115,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/ManuManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Untils/AutoSpinObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Untils/NotRotate.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RocketManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/BaseGameController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlanetManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameController.cs" />
       </list>
     </option>
@@ -184,7 +178,7 @@
       <workItem from="1572774354244" duration="10971000" />
       <workItem from="1572848301083" duration="13119000" />
       <workItem from="1572947002860" duration="3679000" />
-      <workItem from="1572962900818" duration="30562000" />
+      <workItem from="1572962900818" duration="32675000" />
     </task>
     <servers />
   </component>

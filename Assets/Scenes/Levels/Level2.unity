@@ -952,6 +952,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionPrefab: {fileID: 0}
+  weapon:
+  - {fileID: 11400000, guid: ec7325f91ed63d7439125b5dd443d949, type: 2}
+  - {fileID: 11400000, guid: c496c6a3ee9e4374ca056dd2c5a9ff2d, type: 2}
+  - {fileID: 11400000, guid: ac7e8534c955d3b42821164961b97e8f, type: 2}
   player: {fileID: 664484991}
   uiPlayerHUD: {fileID: 1122589207}
   enemy:
