@@ -59,9 +59,13 @@ namespace Orbitality.Main
                 var ignorable = other.GetComponent<IIgnoreable>();
                 if (ignorable != null && !ignorable.InIgnore(id))
                 {
-                    life -= damageable.GetDamage();
-
-                    ChangeLifeEvent?.Invoke(life * 100 / startLife);
+                    if (life > 0)
+                    {
+                        life -= damageable.GetDamage();
+                        life = life > 0 ? life : 0;
+                        
+                        ChangeLifeEvent?.Invoke(life * 100 / startLife);
+                    }
                 }
             }
         }

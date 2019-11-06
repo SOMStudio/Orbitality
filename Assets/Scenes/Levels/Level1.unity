@@ -1035,6 +1035,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionPrefab: {fileID: 0}
+  weapon:
+  - {fileID: 11400000, guid: 5bbda110f801f8e4d895bcd907cbb8b2, type: 2}
+  - {fileID: 11400000, guid: 961142dd27af8ea49b3171b5dcd9a35e, type: 2}
+  - {fileID: 11400000, guid: 77ab728ffaf48824983aa736bff07554, type: 2}
   player: {fileID: 198780657}
   uiPlayerHUD: {fileID: 1552477654}
   enemy:

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Rocket1Short
   m_EditorClassIdentifier: 
   weaponData:
-    maxAmmo: 3
+    maxAmmo: 6
     minFireInterval: 0.2
     reloadTime: 3
     doesAutoReload: 1

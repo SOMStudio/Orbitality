@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using Orbitality.Weapons;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -7,6 +8,7 @@ namespace Orbitality.Main
     public class GameController : BaseGameController, IGravityController
     {
         [Header("Main")]
+        [SerializeField] private WeaponDataTemplate[] weapon;
         
         [Header("Player settings")]
         [SerializeField] private PlayerManager player;
@@ -40,12 +42,14 @@ namespace Orbitality.Main
         private void InitLevel()
         {
             player.Planet.ChangeLifeEvent += uiPlayerHUD.UpdateLife;
+            player.Planet.ChangeLifeEvent += CheckLifePlayer;
             player.Weapon.ChangeAmmoEvent += uiPlayerHUD.UpdateAmmo;
             player.Weapon.ChangeStateEvent += uiPlayerHUD.UpdateState;
 
             for (int i = 0; i < enemy.Length; i++)
             {
                 enemy[i].Planet.ChangeLifeEvent += uiEnemyHUD[i].UpdateLife;
+                enemy[i].Planet.ChangeLifeEvent += CheckLifeEnemy;
             }
         }
 
@@ -61,6 +65,28 @@ namespace Orbitality.Main
             base.EnemyDestroyed();
 
             LoadMenu();
+        }
+
+        private void CheckLifePlayer(float value)
+        {
+            if (value == 0)
+            {
+                PlayerDestroyed();
+            }
+        }
+
+        private void CheckLifeEnemy(float value)
+        {
+            
+            for (int i = 0; i < enemy.Length; i++)
+            {
+                if (enemy[i].Planet.Life > 0)
+                {
+                    return;
+                }
+            }
+            
+            EnemyDestroyed();
         }
 
         private void LoadMenu()

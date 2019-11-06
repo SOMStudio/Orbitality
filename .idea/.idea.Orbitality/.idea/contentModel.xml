@@ -11,6 +11,7 @@
           <e p="GameController.cs" t="Include" />
           <e p="Interfaces" t="Include">
             <e p="BaseGameController.cs" t="Include" />
+            <e p="BaseMenuManager.cs" t="Include" />
             <e p="IDamageable.cs" t="Include" />
             <e p="IGravityController.cs" t="Include" />
             <e p="IGravityDependent.cs" t="Include" />
@@ -25,7 +26,6 @@
             <e p="SoundManager.cs" t="Include" />
           </e>
           <e p="UI" t="Include">
-            <e p="BaseMenuManager.cs" t="Include" />
             <e p="ManuManager.cs" t="Include" />
             <e p="UiEnemyHUD.cs" t="Include" />
             <e p="UiPlanet.cs" t="Include" />
