@@ -17,7 +17,7 @@ namespace Orbitality.Main
         [Header("Enemy Settings")]
         [SerializeField] private EnemyManager[] enemy;
         [SerializeField] private UiEnemyHUD[] uiEnemyHUD;
-
+        
         public static GameController Instance { get; private set; }
         
         private List<IGravityDependent> planetList = new List<IGravityDependent>();

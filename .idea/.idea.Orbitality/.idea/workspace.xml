@@ -2,10 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1535d9da-df6f-45b2-b34a-934debf97b42" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Orbitality/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Orbitality/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Orbitality/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Orbitality/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels/Level1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levels/Level1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels/Level1.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levels/Level1.unity.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels/Level2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levels/Level2.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels/Level2.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levels/Level2.unity.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RocketManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RocketManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/ManuManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/ManuManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,6 +29,8 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Weapons/Data.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interfaces/IGravityController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://E:/Unity/Hands-on-Game-Development-with-Unity-2018.1-development/Assets/GameFramework/SaveSystem/Interfaces/IFileReader.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UserManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interfaces/BaseUserManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/ManuManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interfaces/IWeapon.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Sounds/SoundManager.cs" root0="FORCE_HIGHLIGHTING" />
@@ -37,10 +46,11 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/RocketManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://E:/Unity/Scripts/Assets/Scripts/BASE/BaseWeaponScript.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://E:/Unity/Scripts/Assets/Scripts/BASE/BaseSoundController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://E:/Unity/Scripts/Assets/Scripts/GAMES/Sudoku/UserManager_Sudoku.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://E:/Unity/Scripts/Assets/Scripts/BASE/BaseInputController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interfaces/BaseGameController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://E:/Unity/Scripts/Assets/Scripts/BASE/BaseUserManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://E:/Unity/Scripts/Assets/Scripts/BASE/BaseUserManager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interfaces/IPlanet.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://E:/Unity/Scripts/Assets/Scripts/BASE/BasePlayerManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://E:/Unity/Hands-on-Game-Development-with-Unity-2018.1-development/Assets/GameFramework/Input/InputImplementation/InputBindings.cs" root0="SKIP_HIGHLIGHTING" />
@@ -49,6 +59,7 @@
     <setting file="file://E:/Unity/Hands-on-Game-Development-with-Unity-2018.1-development/Assets/RogueSmash/Weapons/Scripts/Pistol.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://E:/Unity/Hands-on-Game-Development-with-Unity-2018.1-development/Assets/GameFramework/Input/Samples/SampleBindings.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://E:/Unity/Hands-on-Game-Development-with-Unity-2018.1-development/Assets/GameFramework/Coroutines/CoroutineHelper.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/UiLevelList.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlanetManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://E:/Unity/Hands-on-Game-Development-with-Unity-2018.1-development/Assets/GameFramework/Physics/Interfaces/ICollisionEnterHandler.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/WeaponManager.cs" root0="FORCE_HIGHLIGHTING" />
@@ -56,6 +67,7 @@
     <setting file="file://E:/Unity/Scripts/Assets/Scripts/BASE/BaseWeaponController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://E:/Unity/Scripts/Assets/Scripts/GAMES/Tank_Battle/CarController_TB.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://E:/Unity/Scripts/Assets/Scripts/BASE/BaseGameController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/UiLevelButton.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://E:/Unity/Hands-on-Game-Development-with-Unity-2018.1-development/Assets/GameFramework/SaveSystem/Scripts/DefaultFileReader.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://E:/Unity/Scripts/Assets/Scripts/BASE/BASE PLAYER CONTROLLERS/SimplePlayerController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Skyroads/Assets/Scripts/GAMES/SkyRoads/MenuManager_SkyRoads.cs" root0="SKIP_HIGHLIGHTING" />
@@ -66,7 +78,8 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/UiPlayerHUD.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/UiEnemyHUD.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://E:/Unity/Scripts/Assets/Scripts/GAMES/SkyRoads/PlayerManager_SkyRoads.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://E:/Unity/Scripts/Assets/Scripts/GAMES/SkyRoads/UserManager_SkyRoads.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://E:/Unity/Sudoku/Assets/Scripts/GAMES/Sudoku/UserManager_Sudoku.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://E:/Unity/Scripts/Assets/Scripts/GAMES/SkyRoads/UserManager_SkyRoads.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://E:/Unity/Scripts/Assets/Scripts/COMMON/INPUT/Keyboard_Input.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Prefabs/Player.prefab" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://E:/Unity/Scripts/Assets/Scripts/GAMES/SkyRoads/LevelManager_SkyRoads.cs" root0="SKIP_HIGHLIGHTING" />
@@ -108,18 +121,22 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/UiPlayerHUD.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/UiEnemyHUD.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/EnemyManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Sounds/SoundManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Untils/ExtendedCustomMonoBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Untils/LookAtCamera.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Untils/AnimationOpenClose.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/ManuManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Untils/AutoSpinObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Untils/NotRotate.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/RocketManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/BaseGameController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlanetManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Sounds/SoundManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UserManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/RocketManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/UiLevelButton.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/UiLevelList.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/BaseUserManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/ManuManager.cs" />
       </list>
     </option>
   </component>
@@ -152,10 +169,10 @@
       <option name="userSelectedPid" value="false" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" pid="5688">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" pid="14868">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="5688" />
+      <option name="pid" value="14868" />
       <option name="userSelectedPid" value="false" />
       <method v="2" />
     </configuration>
@@ -178,7 +195,7 @@
       <workItem from="1572774354244" duration="10971000" />
       <workItem from="1572848301083" duration="13119000" />
       <workItem from="1572947002860" duration="3679000" />
-      <workItem from="1572962900818" duration="32675000" />
+      <workItem from="1572962900818" duration="44279000" />
     </task>
     <servers />
   </component>

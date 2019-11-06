@@ -5,12 +5,24 @@ namespace Orbitality.Menu
 {
     public class ManuManager : BaseMenuManager
     {
+        [Header("Level List Manager")]
+        [SerializeField] private UiLevelList levelList;
+        
         void LateUpdate() {
             if (didInit) {
                 if (Input.GetKeyDown (KeyCode.Escape)) {
                     ClickEscapeEvent ();
                 }
             }
+        }
+
+        protected override void RestoreOptionsPref()
+        {
+            base.RestoreOptionsPref();
+            
+            UserManager.Instance?.LoadPrivateDataPlayer();
+            
+            levelList.UpdateVisit(UserManager.Instance.GetLevel());
         }
 
         protected override void SaveOptionsPrefs()
@@ -36,6 +48,8 @@ namespace Orbitality.Menu
 
         public void RunLevel(int value)
         {
+            UserManager.Instance?.VisitLevel(value);
+            
             SceneManager.LoadScene("Level" + value);
         }
         
@@ -49,6 +63,8 @@ namespace Orbitality.Menu
         
         protected override void ExitGame ()
         {
+            UserManager.Instance?.SavePrivateDataPlayer();
+            
             SoundManager.Instance?.PlaySoundByIndex(1, Vector3.zero);
 		    
             base.ExitGame ();

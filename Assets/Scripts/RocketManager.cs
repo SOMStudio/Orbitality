@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Playables;
 
 namespace Orbitality.Main
 {
@@ -73,7 +74,14 @@ namespace Orbitality.Main
         {
             if (other.CompareTag("Planet"))
             {
-                DestroyObject();
+                var planet = other.GetComponent<IPlanet>();
+                if (planet != null)
+                {
+                    if (planet.Life > 0)
+                    {
+                        DestroyObject();
+                    }
+                }
             }
         }
 

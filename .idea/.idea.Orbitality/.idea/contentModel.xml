@@ -12,6 +12,7 @@
           <e p="Interfaces" t="Include">
             <e p="BaseGameController.cs" t="Include" />
             <e p="BaseMenuManager.cs" t="Include" />
+            <e p="BaseUserManager.cs" t="Include" />
             <e p="IDamageable.cs" t="Include" />
             <e p="IGravityController.cs" t="Include" />
             <e p="IGravityDependent.cs" t="Include" />
@@ -28,6 +29,8 @@
           <e p="UI" t="Include">
             <e p="ManuManager.cs" t="Include" />
             <e p="UiEnemyHUD.cs" t="Include" />
+            <e p="UiLevelButton.cs" t="Include" />
+            <e p="UiLevelList.cs" t="Include" />
             <e p="UiPlanet.cs" t="Include" />
             <e p="UiPlayerHUD.cs" t="Include" />
           </e>
@@ -38,6 +41,7 @@
             <e p="LookAtCamera.cs" t="Include" />
             <e p="NotRotate.cs" t="Include" />
           </e>
+          <e p="UserManager.cs" t="Include" />
           <e p="WeaponManager.cs" t="Include" />
           <e p="Weapons" t="Include">
             <e p="DewScripts" t="Include">
