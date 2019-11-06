@@ -1,11 +1,10 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace Orbitality.Main
 {
-    public class GameController : MonoBehaviour, IGravityController
+    public class GameController : BaseGameController, IGravityController
     {
         [Header("Main")]
         
@@ -49,6 +48,25 @@ namespace Orbitality.Main
                 enemy[i].Planet.ChangeLifeEvent += uiEnemyHUD[i].UpdateLife;
             }
         }
+
+        public override void PlayerDestroyed()
+        {
+            base.PlayerDestroyed();
+            
+            LoadMenu();
+        }
+
+        public override void EnemyDestroyed()
+        {
+            base.EnemyDestroyed();
+
+            LoadMenu();
+        }
+
+        private void LoadMenu()
+        {
+            SceneManager.LoadScene("Main");
+        }
         
         public void AddPlanet(IGravityDependent planet)
         {
@@ -70,6 +88,11 @@ namespace Orbitality.Main
             }
             
             return result;
+        }
+
+        public void PauseGame()
+        {
+            Paused = !Paused;
         }
     }
 }

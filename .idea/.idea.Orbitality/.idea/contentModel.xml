@@ -10,6 +10,7 @@
           <e p="EnemyManager.cs" t="Include" />
           <e p="GameController.cs" t="Include" />
           <e p="Interfaces" t="Include">
+            <e p="BaseGameController.cs" t="Include" />
             <e p="IDamageable.cs" t="Include" />
             <e p="IGravityController.cs" t="Include" />
             <e p="IGravityDependent.cs" t="Include" />

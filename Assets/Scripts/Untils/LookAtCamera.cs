@@ -10,8 +10,7 @@ public class LookAtCamera : ExtendedCustomMonoBehaviour {
 	private Vector3 targetOffset = Vector3.zero;
 	[SerializeField]
 	private float moveSpeed = 0f;
-
-	// main event
+	
 	void Update() {
 		Quaternion turgRotate = Quaternion.LookRotation ((followTarget.position + targetOffset) - myTransform.position);
 		Quaternion myRotate = myTransform.rotation;
@@ -24,11 +23,9 @@ public class LookAtCamera : ExtendedCustomMonoBehaviour {
 			}
 		}
 	}
-
-	// main logic
+	
 	public override void Init ()
 	{
-		// base init
 		base.Init ();
 
 		followTarget = Camera.main.transform;

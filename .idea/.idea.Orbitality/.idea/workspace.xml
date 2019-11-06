@@ -2,24 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1535d9da-df6f-45b2-b34a-934debf97b42" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/EnemyManager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/EnemyManager.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Interfaces/IGravityController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Interfaces/IGravityController.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Interfaces/IPlanet.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Interfaces/IPlanet.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Orbitality/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Orbitality/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Orbitality/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Orbitality/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ui/PanelTop.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Ui/PanelTop.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels/Level1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levels/Level1.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels/Level2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levels/Level2.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interfaces/IWeapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interfaces/IWeapon.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlanetManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlanetManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/RocketManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RocketManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/WeaponManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/WeaponManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Sounds/SoundManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Sounds/SoundManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/ManuManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/ManuManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Untils/AnimationOpenClose.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Untils/AnimationOpenClose.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Untils/AutoSpinObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Untils/AutoSpinObject.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Untils/ExtendedCustomMonoBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Untils/ExtendedCustomMonoBehaviour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Untils/LookAtCamera.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Untils/LookAtCamera.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Untils/NotRotate.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Untils/NotRotate.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,12 +44,14 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Untils/AutoSpinObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://E:/Unity/Scripts/Assets/Scripts/COMMON/INPUT/Mouse_Input.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Untils/ExtendedCustomMonoBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Untils/AnimationOpenClose.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://E:/Unity/Scripts/Assets/Scripts/COMMON/WEAPONS/Standard_SlotWeaponController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/RocketManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://E:/Unity/Scripts/Assets/Scripts/BASE/BaseWeaponScript.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://E:/Unity/Scripts/Assets/Scripts/BASE/BaseSoundController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://E:/Unity/Scripts/Assets/Scripts/BASE/BaseInputController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interfaces/BaseGameController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://E:/Unity/Scripts/Assets/Scripts/BASE/BaseUserManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interfaces/IPlanet.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://E:/Unity/Scripts/Assets/Scripts/BASE/BasePlayerManager.cs" root0="FORCE_HIGHLIGHTING" />
@@ -67,6 +67,7 @@
     <setting file="file://E:/Unity/Hands-on-Game-Development-with-Unity-2018.1-development/Assets/GameFramework/Input/Interfaces/IMouseInputHandler.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://E:/Unity/Scripts/Assets/Scripts/BASE/BaseWeaponController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://E:/Unity/Scripts/Assets/Scripts/GAMES/Tank_Battle/CarController_TB.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://E:/Unity/Scripts/Assets/Scripts/BASE/BaseGameController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://E:/Unity/Hands-on-Game-Development-with-Unity-2018.1-development/Assets/GameFramework/SaveSystem/Scripts/DefaultFileReader.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://E:/Unity/Scripts/Assets/Scripts/BASE/BASE PLAYER CONTROLLERS/SimplePlayerController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Skyroads/Assets/Scripts/GAMES/SkyRoads/MenuManager_SkyRoads.cs" root0="SKIP_HIGHLIGHTING" />
@@ -103,8 +104,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Main/Interfaces/IIgnoreable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Main/Interfaces/IDamageable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Main/UI/UiPlanet.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Untils/LookAtCamera.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Untils/NotRotate.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Main/PlanetManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Main/GameController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Main/IWeapon.cs" />
@@ -114,19 +113,24 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Main/RocketManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Main/WeaponManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Main/PlayerManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Untils/ExtendedCustomMonoBehaviour.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Sounds/SoundManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/BaseMenuManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/ManuManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/RocketManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlanetManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/IPlanet.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/IWeapon.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/WeaponManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/UiPlayerHUD.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/UiEnemyHUD.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/EnemyManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Sounds/SoundManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Untils/ExtendedCustomMonoBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Untils/LookAtCamera.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Untils/AnimationOpenClose.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/ManuManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Untils/AutoSpinObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Untils/NotRotate.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlanetManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/RocketManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/BaseGameController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameController.cs" />
       </list>
     </option>
@@ -186,7 +190,7 @@
       <workItem from="1572774354244" duration="10971000" />
       <workItem from="1572848301083" duration="13119000" />
       <workItem from="1572947002860" duration="3679000" />
-      <workItem from="1572962900818" duration="24717000" />
+      <workItem from="1572962900818" duration="27060000" />
     </task>
     <servers />
   </component>

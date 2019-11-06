@@ -13,8 +13,7 @@ public class ExtendedCustomMonoBehaviour : MonoBehaviour
 
 	protected Vector3 tempVEC;
 	protected Transform tempTR;
-
-	// main events
+	
 	void Start() {
 		Init();
 	}

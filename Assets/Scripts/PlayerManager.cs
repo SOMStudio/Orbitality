@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using Orbitality.Weapon;
+﻿using Orbitality.Weapon;
 using Orbitality.Weapons;
 using UnityEngine;
-using UnityEngine.Playables;
 
 namespace Orbitality.Main
 {

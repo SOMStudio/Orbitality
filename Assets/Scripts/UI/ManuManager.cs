@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
 namespace Orbitality.Menu
@@ -51,8 +49,6 @@ namespace Orbitality.Menu
         
         protected override void ExitGame ()
         {
-            //gameController.SaveDataLevel ();
-            
             SoundManager.Instance?.PlaySoundByIndex(1, Vector3.zero);
 		    
             base.ExitGame ();

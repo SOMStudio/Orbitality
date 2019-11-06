@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections.Generic;
 
-[AddComponentMenu("Base/Sound Controller")]
+[AddComponentMenu("Base/Sound Manager")]
 
 public class SoundManager : MonoBehaviour
 {
