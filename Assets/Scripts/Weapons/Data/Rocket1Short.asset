@@ -15,7 +15,7 @@ MonoBehaviour:
   weaponData:
     maxAmmo: 6
     minFireInterval: 0.2
-    reloadTime: 3
+    reloadTime: 1
     doesAutoReload: 1
     baseDamage: 1
     bulletSpeed: 7
