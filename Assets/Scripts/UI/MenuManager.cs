@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 
 namespace Orbitality.Menu
 {
-    public class ManuManager : BaseMenuManager
+    public class MenuManager : BaseMenuManager
     {
         [Header("Level List Manager")]
         [SerializeField] private UiLevelList levelList;

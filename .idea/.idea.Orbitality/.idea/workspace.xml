@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1535d9da-df6f-45b2-b34a-934debf97b42" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Orbitality/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Orbitality/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="1535d9da-df6f-45b2-b34a-934debf97b42" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,10 +26,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/Main.unity" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://E:/Unity/Scripts/Assets/Scripts/COMMON/WEAPONS/ProjectileController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Untils/AutoSpinObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://E:/Unity/Scripts/Assets/Scripts/COMMON/INPUT/Mouse_Input.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Untils/ExtendedCustomMonoBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Untils/AnimationOpenClose.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://E:/Unity/Scripts/Assets/Scripts/COMMON/WEAPONS/Standard_SlotWeaponController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/RocketManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://E:/Unity/Scripts/Assets/Scripts/BASE/BaseWeaponScript.cs" root0="SKIP_HIGHLIGHTING" />
@@ -78,8 +73,6 @@
     <setting file="file://E:/Unity/Hands-on-Game-Development-with-Unity-2018.1-development/Assets/GameFramework/SaveSystem/Samples/SaveSystemSample.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://E:/Unity/Scripts/Assets/Scripts/GAMES/SkyRoads/MenuManager_SkyRoads.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://E:/Unity/Scripts/Assets/Scripts/UI/BaseMenuController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Untils/NotRotate.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Untils/LookAtCamera.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://E:/Unity/Hands-on-Game-Development-with-Unity-2018.1-development/Assets/GameFramework/SaveSystem/Interfaces/IFileWriter.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -186,6 +179,7 @@
       <workItem from="1572848301083" duration="13119000" />
       <workItem from="1572947002860" duration="3679000" />
       <workItem from="1572962900818" duration="44394000" />
+      <workItem from="1573588041471" duration="723000" />
     </task>
     <servers />
   </component>
