@@ -90,7 +90,6 @@ GameObject:
   - component: {fileID: 3011018997830024099}
   - component: {fileID: 5987047545544442104}
   - component: {fileID: 9144916710201649238}
-  - component: {fileID: 3264313392847025197}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -106,7 +105,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3018957286393326356}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.01, y: -0.95, z: 0}
+  m_LocalPosition: {x: -0.01, y: -1.36, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 49628282051002547}
@@ -158,19 +157,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!135 &3264313392847025197
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3018957286393326356}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.49999994
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &6406998156306848804
 GameObject:
   m_ObjectHideFlags: 0
@@ -255,7 +241,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4216956727195596, guid: 377b9e38cee120148a7c2ebd5e83362f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.52
+      value: -1.4
       objectReference: {fileID: 0}
     - target: {fileID: 4216956727195596, guid: 377b9e38cee120148a7c2ebd5e83362f, type: 3}
       propertyPath: m_LocalRotation.x
@@ -335,7 +321,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4656713579609454, guid: c92b23f9ab846f940921662efaeaf9ba, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.18
+      value: -1.37
       objectReference: {fileID: 0}
     - target: {fileID: 4656713579609454, guid: c92b23f9ab846f940921662efaeaf9ba, type: 3}
       propertyPath: m_LocalRotation.x

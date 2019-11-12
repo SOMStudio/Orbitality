@@ -20,5 +20,5 @@ MonoBehaviour:
     baseDamage: 4
     bulletSpeed: 8
     bulletDestroyTime: 10
-    bulletPrefab: {fileID: 6406998156306848804, guid: 0aed6413942f68a4dad360dd948b8708,
+    bulletPrefab: {fileID: 6406998156306848804, guid: 3e6789b631d571342b94fca3d8789b5f,
       type: 3}
