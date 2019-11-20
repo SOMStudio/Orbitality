@@ -5,6 +5,6 @@ namespace Orbitality.Main
 {
     public interface IGravityDependent
     {
-        Vector3 GetDependencyVector(Transform positionV3);
+        Vector3 GetDependencyVector(Vector3 positionV3);
     }
 }

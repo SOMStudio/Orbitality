@@ -70,9 +70,9 @@ namespace Orbitality.Main
             }
         }
 
-        public Vector3 GetDependencyVector(Transform positionV3)
+        public Vector3 GetDependencyVector(Vector3 positionV3)
         {
-            Vector3 vectorToObject = transform.position - positionV3.position;
+            Vector3 vectorToObject = transform.position - positionV3;
             float distanceToObject = vectorToObject.magnitude;
             Vector3 result = Vector3.zero;
             

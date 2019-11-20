@@ -1,4 +1,5 @@
-﻿using Orbitality.Weapon;
+﻿using Orbitality.Test;
+using Orbitality.Weapon;
 using Orbitality.Weapons;
 using UnityEngine;
 
@@ -6,20 +7,20 @@ namespace Orbitality.Main
 {
     public class PlayerManager : ExtendedCustomMonoBehaviour
     {
-
-        [SerializeField] private WeaponDataTemplate weaponDataTemplate;
         [SerializeField] private GameObject bulletSpawnPoint;
 
-        [SerializeField] private WeaponManager weaponManager;
         [SerializeField] private PlanetManager planetManager;
+        [SerializeField] private WeaponManager weaponManager;
+        [SerializeField] private CursorManager cursorManager;
 
-        public IWeapon Weapon
-        {
-            get => weaponManager;
-        }
         public IPlanet Planet
         {
             get => planetManager;
+        }
+        
+        public IWeapon Weapon
+        {
+            get => weaponManager;
         }
 
         public override void Init()
@@ -27,24 +28,26 @@ namespace Orbitality.Main
             base.Init();
             
             SetId(myGO.GetHashCode());
-            
-            weaponManager.InitData(weaponDataTemplate.WeaponData, bulletSpawnPoint);
-            
+
             weaponManager.SetId(id);
             planetManager.SetId(id);
+            
+            Weapon.SpawnPoint = bulletSpawnPoint.transform;
         }
 
         private void Update()
         {
             if (Input.GetMouseButtonDown(0))
             {
-                Shot(weaponManager);
+                Shot();
             }
         }
 
         private void FixedUpdate()
         {
             myTransform.rotation = UpdateRotation();
+            
+            UpdateCursor();
         }
 
         private Vector2 GetPositionOnScreen()
@@ -63,15 +66,26 @@ namespace Orbitality.Main
             return rot;
         }
 
-        private void Shot(IWeapon value)
+        private void Shot()
         {
-            if (weaponManager.Shot())
+            if (Weapon != null)
             {
-                SoundManager.Instance?.PlaySoundByIndex(2, myTransform.position);
+                if (Weapon.Shot())
+                {
+                    SoundManager.Instance?.PlaySoundByIndex(2, myTransform.position);
+                }
+                else
+                {
+                    SoundManager.Instance?.PlaySoundByIndex(5, myTransform.position);
+                }
             }
-            else
+        }
+
+        private void UpdateCursor()
+        {
+            if (cursorManager != null)
             {
-                SoundManager.Instance?.PlaySoundByIndex(5, myTransform.position);
+                cursorManager.UpdateCursor();
             }
         }
     }

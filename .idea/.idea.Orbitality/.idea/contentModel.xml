@@ -29,6 +29,9 @@
           <e p="Sounds" t="Include">
             <e p="SoundManager.cs" t="Include" />
           </e>
+          <e p="Test" t="Include">
+            <e p="CursorManager.cs" t="Include" />
+          </e>
           <e p="UI" t="Include">
             <e p="MenuManager.cs" t="Include" />
             <e p="UiEnemyHUD.cs" t="Include" />

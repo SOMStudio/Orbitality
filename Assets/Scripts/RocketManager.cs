@@ -51,7 +51,7 @@ namespace Orbitality.Main
         private Vector3 UpdatePosition()
         {
             Vector3 speedVector = vectorMove * Speed;
-            Vector3 dependVector = gravityController.GetDependencyVector(myTransform);
+            Vector3 dependVector = gravityController.GetDependencyVector(myTransform.position);
 
             if (dependVector != Vector3.zero)
             {

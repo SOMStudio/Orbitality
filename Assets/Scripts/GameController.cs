@@ -106,7 +106,7 @@ namespace Orbitality.Main
             planetList.Remove(planet);
         }
         
-        public Vector3 GetDependencyVector(Transform positionV3)
+        public Vector3 GetDependencyVector(Vector3 positionV3)
         {
             Vector3 result = Vector3.zero;
 
