@@ -4,16 +4,7 @@
     <list default="true" id="1535d9da-df6f-45b2-b34a-934debf97b42" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Orbitality/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Orbitality/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Orbitality/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Orbitality/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels/Level1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levels/Level1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interfaces/IGravityController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interfaces/IGravityController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interfaces/IGravityDependent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interfaces/IGravityDependent.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlanetManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlanetManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RocketManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RocketManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/UserManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UserManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/WeaponManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/WeaponManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -64,18 +55,22 @@
     <setting file="file://E:/Unity/Hands-on-Game-Development-with-Unity-2018.1-development/Assets/GameFramework/Physics/Interfaces/ICollisionEnterHandler.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/WeaponManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://E:/Unity/Hands-on-Game-Development-with-Unity-2018.1-development/Assets/GameFramework/Input/Interfaces/IMouseInputHandler.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SaveSystem/FileSaveSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://E:/Unity/Scripts/Assets/Scripts/BASE/BaseWeaponController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://E:/Unity/Scripts/Assets/Scripts/GAMES/Tank_Battle/CarController_TB.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://E:/Unity/Scripts/Assets/Scripts/BASE/BaseGameController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/UiLevelButton.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interfaces/IIgnoreable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://E:/Unity/Hands-on-Game-Development-with-Unity-2018.1-development/Assets/GameFramework/SaveSystem/Scripts/DefaultFileReader.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://E:/Unity/Scripts/Assets/Scripts/BASE/BASE PLAYER CONTROLLERS/SimplePlayerController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Skyroads/Assets/Scripts/GAMES/SkyRoads/MenuManager_SkyRoads.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interfaces/ISaveSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://E:/Unity/Hands-on-Game-Development-with-Unity-2018.1-development/Assets/RogueSmash/Prototype/Scripts/CharacterControls.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interfaces/IGravityDependent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://E:/Unity/Scripts/Assets/Scripts/BASE/BASE PLAYER CONTROLLERS/BaseTopDown.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://E:/Unity/Scripts/Assets/Scripts/BASE/BASE PLAYER CONTROLLERS/BaseArmedEnemy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/UiPlayerHUD.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interfaces/IDamageable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/UiEnemyHUD.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://E:/Unity/Scripts/Assets/Scripts/GAMES/SkyRoads/PlayerManager_SkyRoads.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://E:/Unity/Sudoku/Assets/Scripts/GAMES/Sudoku/UserManager_Sudoku.cs" root0="SKIP_HIGHLIGHTING" />
@@ -139,6 +134,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Test/CursorManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/WeaponManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/ISaveSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SaveSystem/FileSaveSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UserManager.cs" />
       </list>
     </option>
@@ -204,7 +201,7 @@
       <workItem from="1573760219874" duration="8296000" />
       <workItem from="1574110119132" duration="4925000" />
       <workItem from="1574162228159" duration="91000" />
-      <workItem from="1574255354617" duration="5270000" />
+      <workItem from="1574255354617" duration="10210000" />
     </task>
     <servers />
   </component>

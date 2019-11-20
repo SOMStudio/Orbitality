@@ -3,12 +3,14 @@ using UnityEngine;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
 using System.Runtime.InteropServices;
+using Orbitality.Main;
+using Orbitality.SaveSystem;
 
 public class UserManager : BaseUserManager {
 	
 	public static UserManager Instance { get; private set; }
-	
-	private FileStream filePlayerData;
+
+	private ISaveSystem fileSaveSystem; 
 	
 	private bool dataWasRead = false;
 	private bool dataNeedwWrite = false;
@@ -28,6 +30,8 @@ public class UserManager : BaseUserManager {
 	private void Start()
 	{
 		DontDestroyOnLoad(this.gameObject);
+		
+		fileSaveSystem = new FileSaveSystem(Application.persistentDataPath + "/playerinfo.dat");
 	}
 
 	public void VisitLevel(int value)
@@ -46,21 +50,9 @@ public class UserManager : BaseUserManager {
 			LoadPrivateDataPlayer();
 		}
 	}
-	
-	private void OpenPlayerDataFileForWrite() {
-		filePlayerData = File.Create(Application.persistentDataPath + "/playerinfo.dat");
-	}
-
-	private void OpenPlayerDataFileForRead() {
-		filePlayerData = File.Open (Application.persistentDataPath + "/playerinfo.dat", FileMode.Open);
-	}
-
-	public void ClosePlayerDateFile() {
-		filePlayerData.Close ();
-	}
 
 	/// <summary>
-	/// save player data in file with encrypting, not use for Web-application (we can't write file)
+	/// save player data in file with encrypting, not use for Web-application (web can't write file)
 	/// </summary>
 	public void SavePrivateDataPlayer()
 	{
@@ -68,17 +60,12 @@ public class UserManager : BaseUserManager {
 		{
 			if (dataNeedwWrite)
 			{
-				BinaryFormatter bf = new BinaryFormatter();
-				OpenPlayerDataFileForWrite();
-
 				PlayerData data = new PlayerData();
 				data.playerName = playerName;
-
 				data.level = GetLevel();
 
-				bf.Serialize(filePlayerData, data);
-				ClosePlayerDateFile();
-
+				fileSaveSystem.Save(data);
+				
 				dataNeedwWrite = false;
 			}
 		}
@@ -95,17 +82,12 @@ public class UserManager : BaseUserManager {
 	{
 		if (!dataWasRead)
 		{
-			if (File.Exists(Application.persistentDataPath + "/playerinfo.dat"))
+			PlayerData data = new PlayerData();
+			
+			if (fileSaveSystem.Load(out data))
 			{
-				BinaryFormatter bf = new BinaryFormatter();
-				OpenPlayerDataFileForRead();
-
-				PlayerData data = (PlayerData) bf.Deserialize(filePlayerData);
 				playerName = data.playerName;
-
 				SetLevel(data.level);
-
-				ClosePlayerDateFile();
 			}
 			else
 			{
@@ -118,7 +100,7 @@ public class UserManager : BaseUserManager {
 }
 
 [System.Serializable]
-class PlayerData
+public class PlayerData
 {
 	public string playerName;
 	
