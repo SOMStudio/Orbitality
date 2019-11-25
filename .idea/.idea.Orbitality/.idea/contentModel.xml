@@ -12,6 +12,20 @@
           </e>
           <e p="EnemyManager.cs" t="Include" />
           <e p="GameController.cs" t="Include" />
+          <e p="Input" t="Include">
+            <e p="InputImplementation" t="Include">
+              <e p="InputBindings.cs" t="Include" />
+              <e p="RadialMouseInputHandler.cs" t="Include" />
+            </e>
+            <e p="InputManager.cs" t="Include" />
+            <e p="Interfaces" t="Include">
+              <e p="IInputManager.cs" t="Include" />
+              <e p="IMouseInputHandler.cs" t="Include" />
+            </e>
+            <e p="Samples" t="Include">
+              <e p="SampleBindings.cs" t="Include" />
+            </e>
+          </e>
           <e p="Interfaces" t="Include">
             <e p="BaseGameController.cs" t="Include" />
             <e p="BaseMenuManager.cs" t="Include" />

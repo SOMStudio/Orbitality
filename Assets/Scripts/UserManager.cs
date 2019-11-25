@@ -13,7 +13,7 @@ public class UserManager : BaseUserManager {
 	private ISaveSystem fileSaveSystem; 
 	
 	private bool dataWasRead = false;
-	private bool dataNeedwWrite = false;
+	private bool dataNeedWrite = false;
 
 	void Awake()
 	{
@@ -42,7 +42,7 @@ public class UserManager : BaseUserManager {
 			{
 				SetLevel(value);
 
-				dataNeedwWrite = true;
+				dataNeedWrite = true;
 			}
 		}
 		else
@@ -58,7 +58,7 @@ public class UserManager : BaseUserManager {
 	{
 		if (dataWasRead)
 		{
-			if (dataNeedwWrite)
+			if (dataNeedWrite)
 			{
 				PlayerData data = new PlayerData();
 				data.playerName = playerName;
@@ -66,7 +66,7 @@ public class UserManager : BaseUserManager {
 
 				fileSaveSystem.Save(data);
 				
-				dataNeedwWrite = false;
+				dataNeedWrite = false;
 			}
 		}
 		else

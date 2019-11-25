@@ -4,6 +4,8 @@
     <list default="true" id="1535d9da-df6f-45b2-b34a-934debf97b42" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Orbitality/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Orbitality/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Orbitality/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Orbitality/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/UserManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UserManager.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,6 +23,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Weapons/Data.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interfaces/IGravityController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://E:/Unity/Hands-on-Game-Development-with-Unity-2018.1-development/Assets/GameFramework/SaveSystem/Interfaces/IFileReader.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Input/InputManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UserManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interfaces/BaseUserManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/MenuManager.cs" root0="FORCE_HIGHLIGHTING" />
@@ -29,8 +32,12 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/EnemyManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Test/CursorManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Input/InputImplementation/InputBindings.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/Main.unity" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Input/Interfaces/IMouseInputHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Input/Interfaces/IInputManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://E:/Unity/Scripts/Assets/Scripts/COMMON/WEAPONS/ProjectileController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Input/Samples/SampleBindings.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://E:/Unity/Scripts/Assets/Scripts/COMMON/INPUT/Mouse_Input.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://E:/Unity/Scripts/Assets/Scripts/COMMON/WEAPONS/Standard_SlotWeaponController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/RocketManager.cs" root0="FORCE_HIGHLIGHTING" />
@@ -83,15 +90,13 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Weapons/DewScripts/WeaponData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://E:/Unity/Hands-on-Game-Development-with-Unity-2018.1-development/Assets/GameFramework/SaveSystem/Samples/SaveSystemSample.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://E:/Unity/Scripts/Assets/Scripts/GAMES/SkyRoads/MenuManager_SkyRoads.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Input/InputImplementation/RadialMouseInputHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://E:/Unity/Scripts/Assets/Scripts/UI/BaseMenuController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://E:/Unity/Hands-on-Game-Development-with-Unity-2018.1-development/Assets/GameFramework/SaveSystem/Interfaces/IFileWriter.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$APPLICATION_CONFIG_DIR$/rider64.exe.vmoptions" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Test1/PlayerManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Test1/GameController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Test1/PlanetManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Test1/RocketManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Main/Planet/Interfaces/IGravityDependent.cs" />
@@ -133,10 +138,16 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/PlanetManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Test/CursorManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/WeaponManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/ISaveSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SaveSystem/FileSaveSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UserManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Input/Interfaces/IMouseInputHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Input/InputImplementation/RadialMouseInputHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Input/Interfaces/IInputManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Input/InputManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Input/InputImplementation/InputBindings.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Input/Samples/SampleBindings.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerManager.cs" />
       </list>
     </option>
   </component>
@@ -201,7 +212,9 @@
       <workItem from="1573760219874" duration="8296000" />
       <workItem from="1574110119132" duration="4925000" />
       <workItem from="1574162228159" duration="91000" />
-      <workItem from="1574255354617" duration="10210000" />
+      <workItem from="1574255354617" duration="15603000" />
+      <workItem from="1574287874258" duration="721000" />
+      <workItem from="1574674034156" duration="8632000" />
     </task>
     <servers />
   </component>

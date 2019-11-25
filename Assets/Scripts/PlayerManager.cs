@@ -1,7 +1,10 @@
 ﻿using Orbitality.Test;
 using Orbitality.Weapon;
 using Orbitality.Weapons;
+using SOMStudio.BASE.InputManagement;
+using SOMStudio.Orbitality.InputManagement;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 namespace Orbitality.Main
 {
@@ -13,6 +16,8 @@ namespace Orbitality.Main
         [SerializeField] private WeaponManager weaponManager;
         [SerializeField] private CursorManager cursorManager;
 
+        private InputManager inputManager;
+        
         public IPlanet Planet
         {
             get => planetManager;
@@ -26,27 +31,22 @@ namespace Orbitality.Main
         public override void Init()
         {
             base.Init();
-            
+
             SetId(myGO.GetHashCode());
 
             weaponManager.SetId(id);
             planetManager.SetId(id);
-            
-            Weapon.SpawnPoint = bulletSpawnPoint.transform;
-        }
 
-        private void Update()
-        {
-            if (Input.GetMouseButtonDown(0))
-            {
-                Shot();
-            }
+            Weapon.SpawnPoint = bulletSpawnPoint.transform;
+
+            inputManager = new InputManager(new SampleBindings(), new RadialMouseInputHandler());
+            inputManager.AddActionToBinding("shoot", Shoot);
         }
 
         private void FixedUpdate()
         {
-            myTransform.rotation = UpdateRotation();
-            
+            CheckForInput();
+
             UpdateCursor();
         }
 
@@ -56,17 +56,15 @@ namespace Orbitality.Main
             return new Vector2(worldToScreenPos.x, worldToScreenPos.y);
         }
 
-        private Quaternion UpdateRotation()
+        private void CheckForInput()
         {
-            Vector2 mousePos = Input.mousePosition;
-            Vector3 positionOnScreen = GetPositionOnScreen();
-            Vector2 relativeMousePos = new Vector2(mousePos.x - positionOnScreen.x, mousePos.y - positionOnScreen.y);
-            float angle = Mathf.Atan2(relativeMousePos.y, relativeMousePos.x) * Mathf.Rad2Deg * -1;
-            Quaternion rot = Quaternion.AngleAxis(angle, Vector3.up);
-            return rot;
+            inputManager.CheckForInput();
+
+            Vector2 mouseInput = inputManager.GetMouseVector(GetPositionOnScreen());
+            myTransform.rotation = Quaternion.Euler(mouseInput);
         }
 
-        private void Shot()
+        private void Shoot()
         {
             if (Weapon != null)
             {
