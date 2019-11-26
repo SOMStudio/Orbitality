@@ -89,6 +89,7 @@ GameObject:
   - component: {fileID: 344245032923090465}
   - component: {fileID: 344245034424762422}
   - component: {fileID: 3348096752490112962}
+  - component: {fileID: 1229681548319614976}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -124,18 +125,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf3fe1c18b1d2c54894ef9fd45e892f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponData:
-    maxAmmo: 0
-    minFireInterval: 0
-    reloadTime: 0
-    doesAutoReload: 0
-    baseDamage: 0
-    bulletSpeed: 0
-    bulletDestroyTime: 0
-    bulletPrefab: {fileID: 0}
   bulletSpawnPoint: {fileID: 30156069}
-  weaponManager: {fileID: 3348096752490112962}
   planetManager: {fileID: 7906174120119230150}
+  weaponManager: {fileID: 3348096752490112962}
+  cursorManager: {fileID: 1229681548319614976}
 --- !u!114 &3348096752490112962
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -148,6 +141,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb3168c189094a20be52c4677f40fa75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  weaponData:
+    maxAmmo: 0
+    minFireInterval: 0
+    reloadTime: 0
+    doesAutoReload: 0
+    baseDamage: 0
+    bulletSpeed: 0
+    bulletDestroyTime: 0
+    bulletPrefab: {fileID: 0}
+  spawnPoint: {fileID: 0}
+--- !u!114 &1229681548319614976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 344245032923090464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce770b70b1be1114b88fd584eaea65f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursorPointPrefab: {fileID: 8860360667673209291, guid: 3d6c2413d0e79d34ea1287daeaf8b2b3,
+    type: 3}
+  spawnPoint: {fileID: 30156070}
+  minCountPoint: 10
+  speedMove: 7
+  stepMove: 0.1
+  multiplier: 1
 --- !u!1001 &2893159827648497936
 PrefabInstance:
   m_ObjectHideFlags: 0

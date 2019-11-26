@@ -28,15 +28,20 @@ namespace Orbitality.Main
             get => weaponManager;
         }
 
+        public CursorManager Cursor
+        {
+            get => cursorManager;
+        }
+
         public override void Init()
         {
             base.Init();
 
             SetId(myGO.GetHashCode());
 
-            weaponManager.SetId(id);
             planetManager.SetId(id);
-
+            
+            weaponManager.SetId(id);
             Weapon.SpawnPoint = bulletSpawnPoint.transform;
 
             inputManager = new InputManager(new SampleBindings(), new RadialMouseInputHandler());

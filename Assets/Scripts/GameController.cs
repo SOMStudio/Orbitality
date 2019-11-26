@@ -53,6 +53,7 @@ namespace Orbitality.Main
             }
             
             player.Weapon.WeaponData = weapon[Random.Range(0, weapon.Length)].WeaponData;
+            player.Cursor.SpeedMove = player.Weapon.WeaponData.BulletSpeed;
         }
 
         public override void PlayerDestroyed()
