@@ -46,14 +46,17 @@ namespace Orbitality.Main
             player.Weapon.ChangeAmmoEvent += uiPlayerHUD.UpdateAmmo;
             player.Weapon.ChangeStateEvent += uiPlayerHUD.UpdateState;
 
+            player.Weapon.WeaponData = weapon[Random.Range(0, weapon.Length)].WeaponData;
+            player.Cursor.SpeedMove = player.Weapon.WeaponData.BulletSpeed;
+            
             for (int i = 0; i < enemy.Length; i++)
             {
                 enemy[i].Planet.ChangeLifeEvent += uiEnemyHUD[i].UpdateLife;
                 enemy[i].Planet.ChangeLifeEvent += CheckLifeEnemy;
+                
+                enemy[i].Weapon.WeaponData = weapon[Random.Range(0, weapon.Length)].WeaponData;
+                enemy[i].Cursor.SpeedMove = enemy[i].Weapon.WeaponData.BulletSpeed;
             }
-            
-            player.Weapon.WeaponData = weapon[Random.Range(0, weapon.Length)].WeaponData;
-            player.Cursor.SpeedMove = player.Weapon.WeaponData.BulletSpeed;
         }
 
         public override void PlayerDestroyed()

@@ -85,7 +85,7 @@ namespace Orbitality.Test
             {
                 UpdateStep(i);
                 
-                if (i % multiplier == 0)
+                if ((i+1) % multiplier == 0)
                 {
                     cursorHelpList[i/multiplier].position = positionMove;
                 }

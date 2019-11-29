@@ -2,14 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1535d9da-df6f-45b2-b34a-934debf97b42" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Orbitality/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Orbitality/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Orbitality/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Orbitality/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemy.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels/Level1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levels/Level1.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels/Level2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levels/Level2.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels/Level3.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levels/Level3.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EnemyAi/AiManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EnemyAi/AiManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EnemyManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EnemyManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interfaces/IPlanet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interfaces/IPlanet.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlanetManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlanetManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RocketManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RocketManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Test/CursorManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Test/CursorManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/UiLevelButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/UiLevelButton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utils/ExtendedCustomMonoBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utils/ExtendedCustomMonoBehaviour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,6 +45,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interfaces/IWeapon.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Sounds/SoundManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/EnemyManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../TankBattle/Assets/Scripts/BASE/BASE PLAYER CONTROLLERS/BaseArmedEnemy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Test/CursorManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Input/InputImplementation/InputBindings.cs" root0="FORCE_HIGHLIGHTING" />
@@ -59,6 +72,7 @@
     <setting file="file://E:/Unity/Hands-on-Game-Development-with-Unity-2018.1-development/Assets/GameFramework/Input/InputImplementation/RadialMouseInputHandler.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://E:/Unity/Hands-on-Game-Development-with-Unity-2018.1-development/Assets/RogueSmash/Weapons/Scripts/Pistol.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://E:/Unity/Hands-on-Game-Development-with-Unity-2018.1-development/Assets/GameFramework/Input/Samples/SampleBindings.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://E:/Unity/Hands-on-Game-Development-with-Unity-2018.1-development/Assets/GameFramework/Coroutines/CoroutineHelper.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/UiLevelList.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlanetManager.cs" root0="FORCE_HIGHLIGHTING" />
@@ -79,10 +93,13 @@
     <setting file="file://E:/Unity/Hands-on-Game-Development-with-Unity-2018.1-development/Assets/RogueSmash/Prototype/Scripts/CharacterControls.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interfaces/IGravityDependent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://E:/Unity/Scripts/Assets/Scripts/BASE/BASE PLAYER CONTROLLERS/BaseTopDown.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/EnemyAi/AiManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://E:/Unity/Scripts/Assets/Scripts/BASE/BASE PLAYER CONTROLLERS/BaseArmedEnemy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/UiPlayerHUD.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interfaces/IDamageable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/UiEnemyHUD.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../TankBattle/Assets/Scripts/ENUMS/AIAttackStates.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../TankBattle/Assets/Scripts/ENUMS/AIStates.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://E:/Unity/Scripts/Assets/Scripts/GAMES/SkyRoads/PlayerManager_SkyRoads.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://E:/Unity/Sudoku/Assets/Scripts/GAMES/Sudoku/UserManager_Sudoku.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://E:/Unity/Scripts/Assets/Scripts/GAMES/SkyRoads/UserManager_SkyRoads.cs" root0="SKIP_HIGHLIGHTING" />
@@ -101,9 +118,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Test1/PlanetManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Test1/RocketManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Main/Planet/Interfaces/IGravityDependent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Main/Planet/PlanetManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Main/Interfaces/IIgnoreable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Main/Interfaces/IDamageable.cs" />
@@ -122,7 +136,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/IWeapon.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/UiPlayerHUD.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/UiEnemyHUD.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/EnemyManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Untils/ExtendedCustomMonoBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Untils/LookAtCamera.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Untils/AnimationOpenClose.cs" />
@@ -130,15 +143,12 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Untils/NotRotate.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/BaseGameController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Sounds/SoundManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/UiLevelButton.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/UiLevelList.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/BaseUserManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/ManuManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/MenuManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/IGravityController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/RocketManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/IGravityDependent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlanetManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/WeaponManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/ISaveSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SaveSystem/FileSaveSystem.cs" />
@@ -149,8 +159,15 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Input/InputManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Input/InputImplementation/InputBindings.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Input/Samples/SampleBindings.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/UiLevelButton.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Utils/ExtendedCustomMonoBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlanetManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/IPlanet.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/RocketManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/EnemyManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/EnemyAi/AiManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Test/CursorManager.cs" />
       </list>
     </option>
@@ -184,10 +201,10 @@
       <option name="userSelectedPid" value="false" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" pid="14868">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" pid="10492">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="14868" />
+      <option name="pid" value="10492" />
       <option name="userSelectedPid" value="false" />
       <method v="2" />
     </configuration>
@@ -221,6 +238,8 @@
       <workItem from="1574674034156" duration="10391000" />
       <workItem from="1574711452342" duration="2112000" />
       <workItem from="1574759667624" duration="11836000" />
+      <workItem from="1574875901808" duration="1165000" />
+      <workItem from="1574928553413" duration="35734000" />
     </task>
     <servers />
   </component>

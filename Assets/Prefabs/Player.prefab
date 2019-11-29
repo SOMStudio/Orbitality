@@ -168,7 +168,7 @@ MonoBehaviour:
   spawnPoint: {fileID: 30156070}
   minCountPoint: 10
   speedMove: 7
-  stepMove: 0.1
+  stepMove: 0.05
   multiplier: 1
 --- !u!1001 &2893159827648497936
 PrefabInstance:
@@ -185,7 +185,7 @@ PrefabInstance:
     - target: {fileID: 2872486056358848789, guid: a0b0e6ee0f3a3ef42982548e8f3c55ef,
         type: 3}
       propertyPath: m_TagString
-      value: Player
+      value: Planet
       objectReference: {fileID: 0}
     - target: {fileID: 5317391927505203889, guid: a0b0e6ee0f3a3ef42982548e8f3c55ef,
         type: 3}

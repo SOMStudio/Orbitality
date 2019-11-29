@@ -16,6 +16,12 @@ namespace Orbitality.Main
 
         public event Action<float> ChangeLifeEvent;
 
+        public int Id
+        {
+            get => GetId();
+            set => SetId(value);
+        }
+        
         public string NamePlanet
         {
             get => namePlanet;

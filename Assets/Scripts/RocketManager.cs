@@ -77,9 +77,12 @@ namespace Orbitality.Main
                 var planet = other.GetComponent<IPlanet>();
                 if (planet != null)
                 {
-                    if (planet.Life > 0)
+                    if (!InIgnore(planet.Id))
                     {
-                        DestroyObject();
+                        if (planet.Life > 0)
+                        {
+                            DestroyObject();
+                        }
                     }
                 }
             }

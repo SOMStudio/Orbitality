@@ -36,4 +36,9 @@ public class ExtendedCustomMonoBehaviour : MonoBehaviour
 	{
 		id = anId;
 	}
+
+	public int GetId()
+	{
+		return id;
+	}
 }

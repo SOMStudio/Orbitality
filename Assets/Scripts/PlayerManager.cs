@@ -1,10 +1,8 @@
 ﻿using Orbitality.Test;
 using Orbitality.Weapon;
-using Orbitality.Weapons;
 using SOMStudio.BASE.InputManagement;
 using SOMStudio.Orbitality.InputManagement;
 using UnityEngine;
-using UnityEngine.UIElements;
 
 namespace Orbitality.Main
 {
@@ -45,7 +43,7 @@ namespace Orbitality.Main
             Weapon.SpawnPoint = bulletSpawnPoint.transform;
 
             inputManager = new InputManager(new SampleBindings(), new RadialMouseInputHandler());
-            inputManager.AddActionToBinding("shoot", Shoot);
+            inputManager.AddActionToBinding("shoot", Shot);
         }
 
         private void FixedUpdate()
@@ -69,7 +67,7 @@ namespace Orbitality.Main
             myTransform.rotation = Quaternion.Euler(mouseInput);
         }
 
-        private void Shoot()
+        private void Shot()
         {
             if (Weapon != null)
             {

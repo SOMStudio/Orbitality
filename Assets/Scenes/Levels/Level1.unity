@@ -219,18 +219,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &193396087 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1229681548319614976, guid: 5fc5e83b1570ea047aa90cb21c071444,
-    type: 3}
-  m_PrefabInstance: {fileID: 198780655}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ce770b70b1be1114b88fd584eaea65f7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &198780655
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -304,11 +292,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: ec7325f91ed63d7439125b5dd443d949,
         type: 2}
-    - target: {fileID: 344245034424762422, guid: 5fc5e83b1570ea047aa90cb21c071444,
-        type: 3}
-      propertyPath: cursorManager
-      value: 
-      objectReference: {fileID: 193396087}
     - target: {fileID: 30156072, guid: 5fc5e83b1570ea047aa90cb21c071444, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -353,11 +336,6 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1229681548319614976, guid: 5fc5e83b1570ea047aa90cb21c071444,
-        type: 3}
-      propertyPath: stepMove
-      value: 0.05
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5fc5e83b1570ea047aa90cb21c071444, type: 3}
 --- !u!1001 &199895297
@@ -367,6 +345,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 347039128289401676, guid: 585557830b0c79e4095b35ef40ce3cbc,
+        type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 1009621502}
+    - target: {fileID: 347039128289401676, guid: 585557830b0c79e4095b35ef40ce3cbc,
+        type: 3}
+      propertyPath: stepChangeRotateSpeed
+      value: 0.26
+      objectReference: {fileID: 0}
+    - target: {fileID: 347039128289401676, guid: 585557830b0c79e4095b35ef40ce3cbc,
+        type: 3}
+      propertyPath: stepChangeLengthCursorSpeed
+      value: 0.021
+      objectReference: {fileID: 0}
     - target: {fileID: 344245032923090464, guid: 585557830b0c79e4095b35ef40ce3cbc,
         type: 3}
       propertyPath: m_Name
@@ -480,17 +473,17 @@ PrefabInstance:
     - target: {fileID: 422295980533392811, guid: 585557830b0c79e4095b35ef40ce3cbc,
         type: 3}
       propertyPath: m_AnchorMin.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 422295980533392811, guid: 585557830b0c79e4095b35ef40ce3cbc,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 422295980533392811, guid: 585557830b0c79e4095b35ef40ce3cbc,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 585557830b0c79e4095b35ef40ce3cbc, type: 3}
@@ -755,6 +748,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2aba82072dde4114383c721d2fab29b4, type: 3}
+--- !u!4 &1009621502 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 344245032923090465, guid: 5fc5e83b1570ea047aa90cb21c071444,
+    type: 3}
+  m_PrefabInstance: {fileID: 198780655}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1121681908
 GameObject:
   m_ObjectHideFlags: 0
@@ -828,7 +827,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 61.09907, y: 1.1046268e+27, z: 4.4632686e+30, w: 7.55458e+31}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
