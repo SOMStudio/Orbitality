@@ -345,26 +345,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 347039128289401676, guid: 585557830b0c79e4095b35ef40ce3cbc,
-        type: 3}
-      propertyPath: target
-      value: 
-      objectReference: {fileID: 1009621502}
-    - target: {fileID: 347039128289401676, guid: 585557830b0c79e4095b35ef40ce3cbc,
-        type: 3}
-      propertyPath: stepChangeRotateSpeed
-      value: 0.26
-      objectReference: {fileID: 0}
-    - target: {fileID: 347039128289401676, guid: 585557830b0c79e4095b35ef40ce3cbc,
-        type: 3}
-      propertyPath: stepChangeLengthCursorSpeed
-      value: 0.021
-      objectReference: {fileID: 0}
     - target: {fileID: 344245032923090464, guid: 585557830b0c79e4095b35ef40ce3cbc,
         type: 3}
       propertyPath: m_Name
       value: Enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 347039128289401676, guid: 585557830b0c79e4095b35ef40ce3cbc,
+        type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 1009621502}
     - target: {fileID: 344245032923090465, guid: 585557830b0c79e4095b35ef40ce3cbc,
         type: 3}
       propertyPath: m_LocalPosition.x

@@ -28,10 +28,11 @@ namespace Orbitality.Enemy.AI
         [SerializeField] private EnemyManager enemyManager;
         
         [SerializeField] private AiState aiActiveState;
-        private int rotateDirection = 0;
-        private int increaseDirection = 0;
+        [SerializeField] private int rotateDirection = 0;
+        [SerializeField] private int increaseDirection = 0;
 
         private float prevDistanceToTarget;
+        private float minDistance;
 
         private void Awake()
         {
@@ -48,6 +49,8 @@ namespace Orbitality.Enemy.AI
             base.Init();
             
             StartCoroutine(AiIntelligence());
+            
+            minDistance = DistanceFromObjectToTarget();
         }
 
         public void Init(CursorManager cursorManagerSet)
@@ -107,11 +110,10 @@ namespace Orbitality.Enemy.AI
                         break;
                 }
                 
-                yield return new WaitForSeconds(0.5f);
+                yield return new WaitForSeconds(0.1f);
                 
                 if (rotateDirection != 0 || increaseDirection != 0)
                 {
-                    float minDistance = DistanceFromObjectToTarget();
                     float newDistanceToTarget = DistanceFromCursorToTarget();
                     if (prevDistanceToTarget < newDistanceToTarget)
                     {
@@ -131,7 +133,7 @@ namespace Orbitality.Enemy.AI
 
                         if (increaseDirection != 0)
                         {
-                            if (cursorManager.Length > minDistance)
+                            if (cursorManager.Length > minDistance / 2)
                             {
                                 if (ReduceLengthCursorSpeed())
                                 {
@@ -146,7 +148,6 @@ namespace Orbitality.Enemy.AI
                             }
                             else
                             {
-                                increaseDirection = 1;
                                 aiActiveState = AiState.cursor_increase;
                             }
                         }
@@ -163,8 +164,9 @@ namespace Orbitality.Enemy.AI
                             enemyManager.Shot();
                         }
 
-                        if (newDistanceToTarget > 5)
+                        if (newDistanceToTarget > minDistance)
                         {
+                            rotateDirection = 0;
                             aiActiveState = AiState.searching_target;
                         }
                     }
