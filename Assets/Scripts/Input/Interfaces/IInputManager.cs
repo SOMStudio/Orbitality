@@ -9,6 +9,7 @@ namespace SOMStudio.BASE.InputManagement.Interfaces
         float GetAxis(string axisName);
         bool GetButton(string buttonName);
         Vector2 GetMouseVector(Vector2 relativePosition);
+        void CheckForInput();
     }
 }
 

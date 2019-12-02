@@ -44,12 +44,12 @@ namespace Orbitality.Main
 
             SetId(myGO.GetHashCode());
 
-            planetManager.SetId(id);
+            Planet.Id = id;
             
-            weaponManager.SetId(id);
+            Weapon.SetId(id);
 
             aiInput = GetComponent<AiManager>();
-            aiInput.SetCursor(cursorManager);
+            aiInput.SetCursor(Cursor);
             aiInput.Shot += this.Shot;
         }
         
@@ -69,11 +69,11 @@ namespace Orbitality.Main
 
             if (aiInput.IncreaseAxis != 0)
             {
-                cursorManager.Length += aiInput.IncreaseLength * Time.deltaTime;
+                Cursor.Length += aiInput.IncreaseLength * Time.deltaTime;
             }
         }
 
-        public void Shot()
+        private void Shot()
         {
             if (Weapon != null)
             {
@@ -86,10 +86,7 @@ namespace Orbitality.Main
 
         private void UpdateCursor()
         {
-            if (cursorManager != null)
-            {
-                cursorManager.UpdateCursor();
-            }
+            Cursor?.UpdateCursor();
         }
     }
 }

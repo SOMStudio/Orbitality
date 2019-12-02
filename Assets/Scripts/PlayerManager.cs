@@ -2,6 +2,7 @@
 using Orbitality.Cursor;
 using Orbitality.Weapon;
 using SOMStudio.BASE.InputManagement;
+using SOMStudio.BASE.InputManagement.Interfaces;
 using SOMStudio.Orbitality.InputManagement;
 using UnityEngine;
 
@@ -15,7 +16,7 @@ namespace Orbitality.Main
         [SerializeField] private WeaponManager weaponManager;
         [SerializeField] private CursorManager cursorManager;
 
-        private InputManager inputManager;
+        private IInputManager inputManager;
         
         public IPlanet Planet
         {
@@ -45,9 +46,9 @@ namespace Orbitality.Main
 
             SetId(myGO.GetHashCode());
 
-            planetManager.SetId(id);
+            Planet.Id = id;
             
-            weaponManager.SetId(id);
+            Weapon.SetId(id);
 
             inputManager = new InputManager(new SampleBindings(), new RadialMouseInputHandler());
             inputManager.AddActionToBinding("shoot", Shot);
@@ -91,10 +92,7 @@ namespace Orbitality.Main
 
         private void UpdateCursor()
         {
-            if (cursorManager != null)
-            {
-                cursorManager.UpdateCursor();
-            }
+            Cursor?.UpdateCursor();
         }
     }
 }
