@@ -1,5 +1,6 @@
-﻿using Orbitality.Enemy.AI;
-using Orbitality.Test;
+﻿using System;
+using Orbitality.Cursor;
+using Orbitality.Enemy.AI;
 using Orbitality.Weapon;
 using UnityEngine;
 
@@ -12,8 +13,8 @@ namespace Orbitality.Main
         [SerializeField] private PlanetManager planetManager;
         [SerializeField] private WeaponManager weaponManager;
         [SerializeField] private CursorManager cursorManager;
-
-        private AiManager aiManager;
+        
+        private IAiInput aiInput;
 
         public IPlanet Planet
         {
@@ -25,9 +26,16 @@ namespace Orbitality.Main
             get => weaponManager;
         }
 
-        public CursorManager Cursor
+        public ICursor Cursor
         {
             get => cursorManager;
+        }
+
+        private void Awake()
+        {
+            Weapon.SpawnPoint = bulletSpawnPoint.transform;
+            
+            Cursor.SpawnPoint = bulletSpawnPoint.transform;
         }
 
         public override void Init()
@@ -39,18 +47,30 @@ namespace Orbitality.Main
             planetManager.SetId(id);
             
             weaponManager.SetId(id);
-            Weapon.SpawnPoint = bulletSpawnPoint.transform;
+
+            aiInput = GetComponent<AiManager>();
+            aiInput.SetCursor(cursorManager);
+            aiInput.Shot += this.Shot;
         }
         
         private void FixedUpdate()
         {
+            UpdatePlanet();
+            
             UpdateCursor();
         }
 
-        private Vector2 GetPositionOnScreen()
+        private void UpdatePlanet()
         {
-            Vector3 worldToScreenPos = Camera.main.WorldToScreenPoint(myTransform.position);
-            return new Vector2(worldToScreenPos.x, worldToScreenPos.y);
+            if (aiInput.RotateAxis != 0)
+            {
+                myTransform.Rotate(aiInput.RotateVector * Time.deltaTime);
+            }
+
+            if (aiInput.IncreaseAxis != 0)
+            {
+                cursorManager.Length += aiInput.IncreaseLength * Time.deltaTime;
+            }
         }
 
         public void Shot()

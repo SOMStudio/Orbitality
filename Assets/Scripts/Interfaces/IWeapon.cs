@@ -6,8 +6,9 @@ namespace Orbitality.Weapon
 {
     public interface IWeapon
     {
-        WeaponData WeaponData { get; set; }
-        Transform SpawnPoint { get; set; }
+        void SetId(int val);
+        WeaponData WeaponData { set; }
+        Transform SpawnPoint { set; }
         bool Shot();
         void Reload();
         event Action<float, float> ChangeAmmoEvent;

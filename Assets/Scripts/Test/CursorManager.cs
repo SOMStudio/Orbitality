@@ -1,27 +1,34 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using Orbitality.Main;
 using UnityEngine;
 
-namespace Orbitality.Test
+namespace Orbitality.Cursor
 {
-    public class CursorManager : ExtendedCustomMonoBehaviour
+    public class CursorManager : ExtendedCustomMonoBehaviour, ICursor
     {
-        [SerializeField] private GameObject cursorPointPrefab;
-        [SerializeField] private Transform spawnPoint;
-        [SerializeField] private int minCountPoint = 10;
-        [SerializeField] private float speedMove = 7.0f;
-        [SerializeField] private float stepMove = 0.05f;
-        [SerializeField] private int multiplier = 1;
+        [SerializeField] private GameObject cursorHelpPointPrefab;
+        [SerializeField] private bool visualCursorHelp = true;
+        private Transform spawnPoint;
 
+        private int minCountPoint = 10;
+        private float speedMove = 7.0f;
+        private float stepMove = 0.05f;
+        private int multiplier = 1;
+
+        private readonly List<Vector3> pointList = new List<Vector3>();
         private readonly Transform[] cursorHelpList = new Transform[10];
         private Vector3 positionMove;
         private Vector3 vectorMove;
 
         private IGravityController gravityController;
 
-        public float SpeedMove {
+        public Transform SpawnPoint
+        {
+            set => spawnPoint = value;
+        }
+        
+        public float SpeedMove
+        {
             set
             {
                 if (value > 0)
@@ -30,8 +37,6 @@ namespace Orbitality.Test
                 }
             }
         }
-
-        public Vector3 LastPointPosition => positionMove;
 
         public float Length
         {
@@ -45,7 +50,8 @@ namespace Orbitality.Test
                     multiplier++;
 
                     Length = value;
-                } else if (stepMove < 0.01)
+                }
+                else if (stepMove < 0.01)
                 {
                     if (multiplier > 1)
                     {
@@ -56,38 +62,76 @@ namespace Orbitality.Test
                 }
             }
         }
+        
+        public int CountPoint()
+        {
+            return pointList.Count;
+        }
+
+        public Vector3 GetPointPosition(int val)
+        {
+            return pointList[val];
+        }
+
+        public Vector3 LastPointPosition => GetPointPosition(CountPoint() - 1);
 
         public override void Init()
         {
             base.Init();
-            
+
             InitHelpList();
-            
+
             gravityController = GameController.Instance;
             vectorMove = (spawnPoint.position - myTransform.position).normalized;
         }
-        
+
         private void InitHelpList()
         {
-            for (int i = 0; i < minCountPoint; i++)
+            if (visualCursorHelp)
             {
-                cursorHelpList[i] = Instantiate(cursorPointPrefab, spawnPoint.position, Quaternion.identity).transform;
+                for (int i = 0; i < minCountPoint; i++)
+                {
+                    cursorHelpList[i] = Instantiate(cursorHelpPointPrefab, spawnPoint.position, Quaternion.identity)
+                        .transform;
+                }
             }
         }
-        
+
+        private void UpdatePoint(int number, Vector3 position)
+        {
+            if (number < pointList.Count)
+            {
+                pointList[number] = position;
+            }
+            else
+            {
+                pointList.Add(position);
+            }
+        }
+
+        private void UpdateHelpPoint(int number, Vector3 position)
+        {
+            cursorHelpList[number].position = position;
+        }
+
         public void UpdateCursor()
         {
             positionMove = spawnPoint.position;
             vectorMove = (spawnPoint.position - myTransform.position).normalized;
             int countStep = minCountPoint * multiplier;
-            
+
             for (int i = 0; i < countStep; i++)
             {
                 UpdateStep(i);
-                
-                if ((i+1) % multiplier == 0)
+
+                UpdatePoint(i, positionMove);
+
+                if (visualCursorHelp)
                 {
-                    cursorHelpList[i/multiplier].position = positionMove;
+                    if ((i + 1) % multiplier == 0)
+                    {
+                        UpdateHelpPoint(i / multiplier, positionMove);
+                    }
                 }
             }
         }
@@ -96,16 +140,16 @@ namespace Orbitality.Test
         {
             Vector3 speedVector = vectorMove * speedMove;
             Vector3 dependVector = gravityController.GetDependencyVector(positionMove);
-            
+
             if (dependVector != Vector3.zero)
             {
                 Vector3 speedVectorNew = speedVector + dependVector;
                 speedVector = Vector3.Lerp(speedVector, speedVectorNew, stepMove);
-                
+
                 vectorMove = speedVector.normalized;
                 speedVector = vectorMove * speedMove;
             }
-            
+
             positionMove += speedVector * stepMove;
         }
     }

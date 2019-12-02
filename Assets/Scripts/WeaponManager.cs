@@ -9,7 +9,7 @@ namespace Orbitality.Weapon
     public class WeaponManager : ExtendedCustomMonoBehaviour, IWeapon
     {
         [SerializeField] private WeaponData weaponData;
-        [SerializeField] private Transform spawnPoint;
+        private Transform spawnPoint;
         private int currentAmmo;
         private bool isReloading = false;
         private float lastFire = 0;
@@ -27,7 +27,6 @@ namespace Orbitality.Weapon
 
         public WeaponData WeaponData
         {
-            get => weaponData;
             set
             {
                 weaponData = value;
@@ -37,7 +36,6 @@ namespace Orbitality.Weapon
         
         public Transform SpawnPoint
         {
-            get => spawnPoint;
             set => spawnPoint = value;
         }
 

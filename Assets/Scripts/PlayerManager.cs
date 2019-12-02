@@ -1,4 +1,5 @@
-﻿using Orbitality.Test;
+﻿using System;
+using Orbitality.Cursor;
 using Orbitality.Weapon;
 using SOMStudio.BASE.InputManagement;
 using SOMStudio.Orbitality.InputManagement;
@@ -26,9 +27,16 @@ namespace Orbitality.Main
             get => weaponManager;
         }
 
-        public CursorManager Cursor
+        public ICursor Cursor
         {
             get => cursorManager;
+        }
+
+        private void Awake()
+        {
+            Weapon.SpawnPoint = bulletSpawnPoint.transform;
+
+            Cursor.SpawnPoint = bulletSpawnPoint.transform;
         }
 
         public override void Init()
@@ -40,7 +48,6 @@ namespace Orbitality.Main
             planetManager.SetId(id);
             
             weaponManager.SetId(id);
-            Weapon.SpawnPoint = bulletSpawnPoint.transform;
 
             inputManager = new InputManager(new SampleBindings(), new RadialMouseInputHandler());
             inputManager.AddActionToBinding("shoot", Shot);

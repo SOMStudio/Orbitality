@@ -2232,9 +2232,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 347039128289401676, guid: 585557830b0c79e4095b35ef40ce3cbc,
         type: 3}
+      propertyPath: obstacleList.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 347039128289401676, guid: 585557830b0c79e4095b35ef40ce3cbc,
+        type: 3}
       propertyPath: target
       value: 
       objectReference: {fileID: 198780656}
+    - target: {fileID: 347039128289401676, guid: 585557830b0c79e4095b35ef40ce3cbc,
+        type: 3}
+      propertyPath: obstacleList.Array.data[0]
+      value: 
+      objectReference: {fileID: 1572816923}
+    - target: {fileID: 347039128289401676, guid: 585557830b0c79e4095b35ef40ce3cbc,
+        type: 3}
+      propertyPath: obstacleList.Array.data[1]
+      value: 
+      objectReference: {fileID: 1289968452}
     - target: {fileID: 344245032923090465, guid: 585557830b0c79e4095b35ef40ce3cbc,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2345,6 +2360,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 5bbda110f801f8e4d895bcd907cbb8b2,
         type: 2}
+    - target: {fileID: 766894120410834055, guid: 585557830b0c79e4095b35ef40ce3cbc,
+        type: 3}
+      propertyPath: visualCursorHelp
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 585557830b0c79e4095b35ef40ce3cbc, type: 3}
 --- !u!4 &1808120193 stripped

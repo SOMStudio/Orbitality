@@ -150,7 +150,6 @@ MonoBehaviour:
     bulletSpeed: 0
     bulletDestroyTime: 0
     bulletPrefab: {fileID: 0}
-  spawnPoint: {fileID: 0}
 --- !u!114 &1229681548319614976
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -163,13 +162,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce770b70b1be1114b88fd584eaea65f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorPointPrefab: {fileID: 8860360667673209291, guid: 3d6c2413d0e79d34ea1287daeaf8b2b3,
+  cursorHelpPointPrefab: {fileID: 8860360667673209291, guid: 3d6c2413d0e79d34ea1287daeaf8b2b3,
     type: 3}
-  spawnPoint: {fileID: 30156070}
-  minCountPoint: 10
-  speedMove: 7
-  stepMove: 0.05
-  multiplier: 1
+  visualCursorHelp: 1
 --- !u!1001 &2893159827648497936
 PrefabInstance:
   m_ObjectHideFlags: 0

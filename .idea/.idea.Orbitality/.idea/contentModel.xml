@@ -9,6 +9,7 @@
         <e p="Scripts" t="Include">
           <e p="EnemyAi" t="Include">
             <e p="AiManager.cs" t="Include" />
+            <e p="IAiInput.cs" t="Include" />
           </e>
           <e p="EnemyManager.cs" t="Include" />
           <e p="GameController.cs" t="Include" />
@@ -30,6 +31,7 @@
             <e p="BaseGameController.cs" t="Include" />
             <e p="BaseMenuManager.cs" t="Include" />
             <e p="BaseUserManager.cs" t="Include" />
+            <e p="ICursor.cs" t="Include" />
             <e p="IDamageable.cs" t="Include" />
             <e p="IGravityController.cs" t="Include" />
             <e p="IGravityDependent.cs" t="Include" />

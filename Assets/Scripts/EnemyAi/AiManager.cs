@@ -1,15 +1,13 @@
 ﻿using System;
 using System.Collections;
-using System.Collections.Generic;
+using Orbitality.Cursor;
 using Orbitality.Main;
-using Orbitality.Test;
-using Orbitality.Weapon;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
 namespace Orbitality.Enemy.AI
 {
-    public class AiManager : ExtendedCustomMonoBehaviour
+    public class AiManager : ExtendedCustomMonoBehaviour, IAiInput
     {
         [SerializeField] private float rotateSpeed = 5f;
         [SerializeField] private float stepChangeRotateSpeed = 0.51f;
@@ -22,11 +20,12 @@ namespace Orbitality.Enemy.AI
         [SerializeField] private float minLengthCursorSpeed = 0.1f;
 
         [SerializeField] private float distanceForShoot = 1;
+
+        [SerializeField] private Transform[] obstacleList;
         
         [SerializeField] private Transform target;
-        [SerializeField] private CursorManager cursorManager;
-        [SerializeField] private EnemyManager enemyManager;
-        
+        private ICursor cursorManager;
+
         [SerializeField] private AiState aiActiveState;
         [SerializeField] private int rotateDirection = 0;
         [SerializeField] private int increaseDirection = 0;
@@ -34,14 +33,33 @@ namespace Orbitality.Enemy.AI
         private float prevDistanceToTarget;
         private float minDistance;
 
+        public int RotateAxis
+        {
+            get { return rotateDirection; }
+        }
+
+        public Vector3 RotateVector
+        {
+            get { return rotateDirection * rotateSpeed * new Vector3(0, 1, 0); }
+        }
+
+        public int IncreaseAxis
+        {
+            get { return increaseDirection; }
+        }
+
+        public float IncreaseLength
+        {
+            get { return cursorManager.Length * changeLengthCursorSpeed * increaseDirection; }
+        }
+
+        public event Action Shot;
+
         private void Awake()
         {
             aiActiveState = AiState.searching_target;
 
-            if (target)
-            {
-                prevDistanceToTarget = 100;
-            }
+            prevDistanceToTarget = 100;
         }
 
         public override void Init()
@@ -53,9 +71,9 @@ namespace Orbitality.Enemy.AI
             minDistance = DistanceFromObjectToTarget();
         }
 
-        public void Init(CursorManager cursorManagerSet)
+        public void SetCursor(ICursor val)
         {
-            this.cursorManager = cursorManagerSet;
+            this.cursorManager = val;
         }
 
         private IEnumerator AiIntelligence()
@@ -153,15 +171,23 @@ namespace Orbitality.Enemy.AI
                         }
                     }
 
+                    bool obstacleInCursor = CheckForObstacle();
+                    
                     if (newDistanceToTarget <= distanceForShoot)
                     {
-                        enemyManager.Shot();
+                        if (!obstacleInCursor)
+                        {
+                            Shot?.Invoke();
+                        }
                     }
                     else
                     {
                         if (Random.Range(0, 100) > 90)
                         {
-                            enemyManager.Shot();
+                            if (!obstacleInCursor)
+                            {
+                                Shot?.Invoke();
+                            }
                         }
 
                         if (newDistanceToTarget > minDistance)
@@ -176,6 +202,24 @@ namespace Orbitality.Enemy.AI
 
                 yield return null;
             } while (true);
+        }
+
+        private bool CheckForObstacle()
+        {
+            int cursorPoints = cursorManager.CountPoint();
+            
+            foreach (var variable in obstacleList)
+            {
+                for (int i = 1; i < cursorPoints - 1; i++)
+                {
+                    if (Vector3.Distance(variable.position, cursorManager.GetPointPosition(i)) <= distanceForShoot)
+                    {
+                        return true;
+                    }             
+                }
+            }
+
+            return false;
         }
 
         private bool IncreaseRotateSpeed()
@@ -254,19 +298,6 @@ namespace Orbitality.Enemy.AI
         private float DistanceFromCursorToTarget()
         {
             return (cursorManager.LastPointPosition - target.position).magnitude;
-        }
-
-        private void FixedUpdate()
-        {
-            if (rotateDirection != 0)
-            {
-                myTransform.Rotate(new Vector3(0, 1, 0), rotateSpeed * rotateDirection * Time.deltaTime);
-            }
-
-            if (increaseDirection != 0)
-            {
-                cursorManager.Length += cursorManager.Length * changeLengthCursorSpeed * increaseDirection * Time.deltaTime;
-            }
         }
     }
 
