@@ -1,5 +1,4 @@
-﻿using System;
-using Orbitality.Cursor;
+﻿using Orbitality.Cursor;
 using Orbitality.Enemy.AI;
 using Orbitality.Weapon;
 using UnityEngine;

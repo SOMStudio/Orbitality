@@ -1,9 +1,4 @@
-﻿using System;
-using UnityEngine;
-using System.Runtime.Serialization.Formatters.Binary;
-using System.IO;
-using System.Runtime.InteropServices;
-using Orbitality.Main;
+﻿using UnityEngine;
 using Orbitality.SaveSystem;
 
 public class UserManager : BaseUserManager {

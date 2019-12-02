@@ -1,6 +1,5 @@
 ﻿using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
-using Orbitality.Main;
 
 namespace Orbitality.SaveSystem
 {

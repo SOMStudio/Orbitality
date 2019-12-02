@@ -1,20 +1,20 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.UI;
+﻿using UnityEngine;
 
-public class UiLevelList : MonoBehaviour
+namespace Orbitality.Menu
 {
-    [SerializeField] private UiLevelButton[] visitToggles;
-
-    public void UpdateVisit(int value)
+    public class UiLevelList : MonoBehaviour
     {
-        for (int i = 0; i < value; i++)
-        {
-            visitToggles[i].Interactable = true;
-            visitToggles[i].Visit = true;
-        }
+        [SerializeField] private UiLevelButton[] visitToggles;
 
-        visitToggles[value].Interactable = true;
+        public void UpdateVisit(int value)
+        {
+            for (int i = 0; i < value; i++)
+            {
+                visitToggles[i].Interactable = true;
+                visitToggles[i].Visit = true;
+            }
+
+            visitToggles[value].Interactable = true;
+        }
     }
 }

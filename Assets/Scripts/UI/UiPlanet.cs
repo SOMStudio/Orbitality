@@ -1,14 +1,15 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
-public class UiPlanet : MonoBehaviour
+namespace Orbitality.Menu
 {
-    [SerializeField] private Slider lifeSlider;
-
-    public void SetLife(float value)
+    public class UiPlanet : MonoBehaviour
     {
-        lifeSlider.value = value;
+        [SerializeField] private Slider lifeSlider;
+
+        public void SetLife(float value)
+        {
+            lifeSlider.value = value;
+        }
     }
 }

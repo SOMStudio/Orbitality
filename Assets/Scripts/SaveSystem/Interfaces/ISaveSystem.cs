@@ -1,4 +1,4 @@
-﻿namespace Orbitality.Main
+﻿namespace Orbitality.SaveSystem
 {
     public interface ISaveSystem
     {

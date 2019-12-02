@@ -1,5 +1,4 @@
-﻿using System;
-using Orbitality.Cursor;
+﻿using Orbitality.Cursor;
 using Orbitality.Weapon;
 using SOMStudio.BASE.InputManagement;
 using SOMStudio.BASE.InputManagement.Interfaces;
