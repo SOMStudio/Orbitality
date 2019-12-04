@@ -1003,7 +1003,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40fb5d633f0babd4c97e1c3876b4da13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosionPrefab: {fileID: 0}
+  explosionPrefab: {fileID: 8006228900153784000, guid: 2dc310496ae77fb4b86cc122b85d34ce,
+    type: 3}
   weapon:
   - {fileID: 11400000, guid: ec7325f91ed63d7439125b5dd443d949, type: 2}
   - {fileID: 11400000, guid: c496c6a3ee9e4374ca056dd2c5a9ff2d, type: 2}

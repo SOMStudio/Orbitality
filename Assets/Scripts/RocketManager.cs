@@ -89,9 +89,14 @@ namespace Orbitality.Main
 
         private void DestroyObject()
         {
+            if (myTransform.position.magnitude < 10)
+            {
+                GameController.Instance?.Explode(myTransform.position);
+
+                SoundManager.Instance?.PlaySoundByIndex(6, myTransform.position);
+            }
+
             Destroy(myGO);
-            
-            SoundManager.Instance?.PlaySoundByIndex(6, myTransform.position);
         }
 
         public void InitDestroyAfterTime()
