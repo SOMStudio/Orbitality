@@ -2,29 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1535d9da-df6f-45b2-b34a-934debf97b42" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Orbitality/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Orbitality/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Orbitality/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Orbitality/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EnemyAi/IAiInput.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EnemyAi/IAiInput.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interfaces/ICursor.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interfaces/ICursor.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interfaces/ISaveSystem.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interfaces/ISaveSystem.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interfaces/IWeapon.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interfaces/IWeapon.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlanetManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlanetManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SaveSystem/FileSaveSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SaveSystem/FileSaveSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Test.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Test/CursorManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Test/CursorManager.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/UiEnemyHUD.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/UiEnemyHUD.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/UiLevelButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/UiLevelButton.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/UiLevelList.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/UiLevelList.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/UiPlanet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/UiPlanet.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/UiPlayerHUD.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/UiPlayerHUD.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/WeaponManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Weapons/WeaponManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/WeaponManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Weapons/WeaponManager.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Cursor/CursorManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Cursor/CursorManager.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -128,7 +107,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Main/PlanetManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Main/GameController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Main/IWeapon.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Main/Weapons/WeaponData.cs" />
@@ -152,7 +130,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/IGravityController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/IGravityDependent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/ISaveSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UserManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Input/Interfaces/IMouseInputHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Input/InputImplementation/RadialMouseInputHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Input/InputManager.cs" />
@@ -160,7 +137,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Input/Samples/SampleBindings.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Utils/ExtendedCustomMonoBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/IPlanet.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/RocketManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/IWeapon.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/WeaponManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/ICursor.cs" />
@@ -168,8 +144,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/EnemyAi/IAiInput.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/EnemyAi/AiManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Input/Interfaces/IInputManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/EnemyManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SaveSystem/Interfaces/ISaveSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SaveSystem/FileSaveSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/UiEnemyHUD.cs" />
@@ -179,6 +153,11 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/UiPlayerHUD.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlanetManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/RocketManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/EnemyManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UserManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Cursor/CursorManager.cs" />
       </list>
     </option>
   </component>
@@ -252,7 +231,8 @@
       <workItem from="1574928553413" duration="35734000" />
       <workItem from="1575013475097" duration="2729000" />
       <workItem from="1575234350559" duration="3476000" />
-      <workItem from="1575290863127" duration="19309000" />
+      <workItem from="1575290863127" duration="19496000" />
+      <workItem from="1575400018223" duration="1803000" />
     </task>
     <servers />
   </component>

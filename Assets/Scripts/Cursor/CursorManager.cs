@@ -87,13 +87,10 @@ namespace Orbitality.Cursor
 
         private void InitHelpList()
         {
-            if (visualCursorHelp)
+            for (int i = 0; i < minCountPoint; i++)
             {
-                for (int i = 0; i < minCountPoint; i++)
-                {
-                    cursorHelpList[i] = Instantiate(cursorHelpPointPrefab, spawnPoint.position, Quaternion.identity)
-                        .transform;
-                }
+                cursorHelpList[i] = Instantiate(cursorHelpPointPrefab, spawnPoint.position, Quaternion.identity)
+                    .transform;
             }
         }
 
