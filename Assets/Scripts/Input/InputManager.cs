@@ -41,7 +41,7 @@ namespace SOMStudio.BASE.InputManagement
         {
             foreach (var kvp in inputBindings.KeyBindings)
             {
-                if (Input.GetKeyDown(kvp.Value))
+                if (Input.GetKeyUp(kvp.Value))
                 {
                     Action action;
                     actionMap.TryGetValue(kvp.Key, out action);
