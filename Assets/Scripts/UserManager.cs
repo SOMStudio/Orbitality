@@ -20,13 +20,13 @@ public class UserManager : BaseUserManager {
 		{
 			Destroy(this.gameObject);
 		}
+		
+		fileSaveSystem = new FileSaveSystem(Application.persistentDataPath + "/playerinfo.dat");
 	}
 
 	private void Start()
 	{
 		DontDestroyOnLoad(this.gameObject);
-		
-		fileSaveSystem = new FileSaveSystem(Application.persistentDataPath + "/playerinfo.dat");
 	}
 
 	public void VisitLevel(int value)
