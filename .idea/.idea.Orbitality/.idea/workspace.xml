@@ -3,9 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="1535d9da-df6f-45b2-b34a-934debf97b42" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Orbitality/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Orbitality/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels/Level1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levels/Level1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/HelpCursor/Sphere.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/HelpCursor/Sphere.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Rocket1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Rocket1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Rocket2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Rocket2.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Rocket3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Rocket3.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Cursor/CursorManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Cursor/CursorManager.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,6 +35,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Input/InputImplementation/InputBindings.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/Main.unity" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Input/Interfaces/IMouseInputHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Prefabs/Rocket1.prefab" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Input/Interfaces/IInputManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://E:/Unity/Scripts/Assets/Scripts/COMMON/WEAPONS/ProjectileController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Input/Samples/SampleBindings.cs" root0="FORCE_HIGHLIGHTING" />
@@ -157,10 +160,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/PlanetManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/EnemyManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Cursor/CursorManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RocketManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UserManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Input/InputManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Cursor/CursorManager.cs" />
       </list>
     </option>
   </component>
@@ -239,6 +242,7 @@
       <workItem from="1575466544346" duration="2054000" />
       <workItem from="1575624903549" duration="802000" />
       <workItem from="1575627335062" duration="881000" />
+      <workItem from="1575751061705" duration="725000" />
     </task>
     <servers />
   </component>
