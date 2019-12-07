@@ -20,6 +20,8 @@ namespace Orbitality.Cursor
         private Vector3 positionMove;
         private Vector3 vectorMove;
 
+        private float decreaseSizeCursorHelp = 0.003f;
+
         private IGravityController gravityController;
 
         public Transform SpawnPoint
@@ -91,6 +93,7 @@ namespace Orbitality.Cursor
             {
                 cursorHelpList[i] = Instantiate(cursorHelpPointPrefab, spawnPoint.position, Quaternion.identity)
                     .transform;
+                cursorHelpList[i].localScale -= Vector3.one * i * decreaseSizeCursorHelp;
             }
         }
 
