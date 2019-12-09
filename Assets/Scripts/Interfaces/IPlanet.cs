@@ -7,7 +7,7 @@ namespace Orbitality.Main
         int Id { get; set; }
         string NamePlanet { get; set; }
         float Mass { get; set; }
-        float DistanceDepend { get; set; }
+        float GravityDistance { get; set; }
         float Life { get; set; }
         event Action<float> ChangeLifeEvent;
     }

@@ -56,7 +56,7 @@ GameObject:
   - component: {fileID: 9176406251139418222}
   - component: {fileID: 4320796719326340443}
   m_Layer: 0
-  m_Name: DistanceSphere
+  m_Name: GravityMesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -71,7 +71,7 @@ Transform:
   m_GameObject: {fileID: 929429740581069482}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 10, y: 10, z: 10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5317391927505203889}
   m_RootOrder: 1
@@ -201,8 +201,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   namePlanet: Planet
   mass: 10
-  distanceDepend: 10
+  gravityDistance: 10
   life: 10
+  gravityMeshRef: {fileID: 8711179727175728818}
   uiManager: {fileID: 3313200703462746151}
 --- !u!1 &8609050235899815543
 GameObject:
@@ -216,7 +217,7 @@ GameObject:
   - component: {fileID: 2341601012399533392}
   - component: {fileID: 5085215396617352919}
   m_Layer: 0
-  m_Name: PlanetSphere
+  m_Name: PlanetMesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

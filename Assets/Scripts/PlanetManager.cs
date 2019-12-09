@@ -1,18 +1,24 @@
 ﻿using System;
 using Orbitality.Menu;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace Orbitality.Main
 {
     public class PlanetManager : ExtendedCustomMonoBehaviour, IPlanet, IGravityDependent
     {
+        [Header("Value")]
         [SerializeField] private string namePlanet = "Planet";
         [SerializeField] private float mass = 10.0f;
-        [SerializeField] private float distanceDepend = 50.0f;
+        [SerializeField] private float gravityDistance = 10.0f;
         [SerializeField] private float life = 10.0f;
 
         private float startLife = 10.0f;
 
+        [Header("References")]
+        [SerializeField] private Transform gravityMeshRef;
+        
+        [Header("Managers")]
         [SerializeField] private UiPlanet uiManager;
 
         public event Action<float> ChangeLifeEvent;
@@ -35,10 +41,15 @@ namespace Orbitality.Main
             set => mass = value;
         }
 
-        public float DistanceDepend
+        public float GravityDistance
         {
-            get => distanceDepend;
-            set => distanceDepend = value;
+            get => gravityDistance;
+            set
+            {
+                gravityDistance = value;
+                
+                SetScaleGravityMesh(gravityDistance);
+            }
         }
 
         public float Life
@@ -58,6 +69,16 @@ namespace Orbitality.Main
             startLife = life;
         }
 
+        private void SetScaleGravityMesh(float value)
+        {
+            gravityMeshRef.localScale = Vector3.one * value;
+        }
+
+        private float GetScaleGravityMesh()
+        {
+            return gravityMeshRef.localScale.x;
+        }
+        
         private void OnTriggerEnter(Collider other)
         {
             var damageable = other.GetComponent<IDamageable>();
@@ -83,9 +104,9 @@ namespace Orbitality.Main
             float distanceToObject = vectorToObject.magnitude;
             Vector3 result = Vector3.zero;
             
-            if (distanceToObject <= distanceDepend)
+            if (distanceToObject <= gravityDistance)
             {
-                float inverseDependency = 1 - (distanceToObject / distanceDepend);
+                float inverseDependency = 1 - (distanceToObject / gravityDistance);
                 result = vectorToObject.normalized * inverseDependency;
             }
 

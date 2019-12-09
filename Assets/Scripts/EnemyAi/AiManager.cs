@@ -84,6 +84,8 @@ namespace Orbitality.Enemy.AI
                 {
                     case AiState.pouse_no_target:
 
+                        rotateDirection = 0;
+                        increaseDirection = 0;
                         break;
                     case AiState.searching_target:
                         if (target == null)
