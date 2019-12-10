@@ -69,6 +69,7 @@
           <e p="Utils" t="Include">
             <e p="AnimationOpenClose.cs" t="Include" />
             <e p="AutoSpinObject.cs" t="Include" />
+            <e p="DestroyByTime.cs" t="Include" />
             <e p="ExtendedCustomMonoBehaviour.cs" t="Include" />
             <e p="LookAtCamera.cs" t="Include" />
             <e p="NotRotate.cs" t="Include" />
