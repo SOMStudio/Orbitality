@@ -78,13 +78,16 @@ namespace Orbitality.Main
         {
             if (Weapon != null)
             {
-                if (Weapon.Shot())
+                if (!GameController.Instance.MouseOverUi)
                 {
-                    SoundManager.Instance?.PlaySoundByIndex(2, myTransform.position);
-                }
-                else
-                {
-                    SoundManager.Instance?.PlaySoundByIndex(5, myTransform.position);
+                    if (Weapon.Shot())
+                    {
+                        SoundManager.Instance?.PlaySoundByIndex(2, myTransform.position);
+                    }
+                    else
+                    {
+                        SoundManager.Instance?.PlaySoundByIndex(5, myTransform.position);
+                    }
                 }
             }
         }

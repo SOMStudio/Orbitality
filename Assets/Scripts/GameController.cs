@@ -20,7 +20,13 @@ namespace Orbitality.Main
         [SerializeField] private UiEnemyHUD[] uiEnemyHUD;
         
         public static GameController Instance { get; private set; }
-        
+
+        public bool MouseOverUi
+        {
+            get;
+            set;
+        }
+
         private readonly List<IGravityDependent> planetList = new List<IGravityDependent>();
 
         void Awake()

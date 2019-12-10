@@ -3,7 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="1535d9da-df6f-45b2-b34a-934debf97b42" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Orbitality/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Orbitality/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ui/PanelTop.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Ui/PanelTop.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels/Level1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levels/Level1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels/Level2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levels/Level2.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels/Level3.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levels/Level3.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/MenuManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/MenuManager.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -62,7 +68,9 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/UiLevelList.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlanetManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utils/LookAtCamera.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Prefabs/Particles/ExplosionRocket.prefab" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://E:/Unity/Hands-on-Game-Development-with-Unity-2018.1-development/Assets/GameFramework/Physics/Interfaces/ICollisionEnterHandler.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://E:/Unity/Scripts/Assets/Scripts/GAMES/Reflect Cristals Logic/GameMenuControoler_Crystal.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Weapons/WeaponManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://E:/Unity/Hands-on-Game-Development-with-Unity-2018.1-development/Assets/GameFramework/Input/Interfaces/IMouseInputHandler.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SaveSystem/FileSaveSystem.cs" root0="FORCE_HIGHLIGHTING" />
@@ -128,7 +136,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Sounds/SoundManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/BaseUserManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/ManuManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/MenuManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/IGravityController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/IGravityDependent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/ISaveSystem.cs" />
@@ -150,9 +157,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/UiLevelList.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/UiPlanet.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/UiPlayerHUD.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/EnemyManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UserManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Input/InputManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Cursor/CursorManager.cs" />
@@ -160,6 +165,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/IPlanet.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/EnemyAi/AiManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlanetManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/MenuManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerManager.cs" />
       </list>
     </option>
   </component>
@@ -240,6 +248,7 @@
       <workItem from="1575627335062" duration="881000" />
       <workItem from="1575751061705" duration="725000" />
       <workItem from="1575879393160" duration="14309000" />
+      <workItem from="1576001295064" duration="2397000" />
     </task>
     <servers />
   </component>
